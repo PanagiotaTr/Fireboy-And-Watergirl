@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://3atipbd0l1bj" path="res://assets/sprites/fireboy/head-jump.png" id="6_oa8k2"]
 [ext_resource type="Texture2D" uid="uid://crue2u0uyymv6" path="res://assets/sprites/fireboy/head-run_jump.png" id="7_j6peq"]
 [ext_resource type="AudioStream" uid="uid://dscqxlqqk86ys" path="res://assets/sounds/Fireboy Jump.wav" id="10_ow5b4"]
+[ext_resource type="AudioStream" uid="uid://7s7nx32fyc7t" path="res://assets/sounds/Death sound.wav" id="11_bs4nq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yuutc"]
 atlas = ExtResource("1_cxg85")
@@ -331,4 +332,8 @@ shape = SubResource("CapsuleShape2D_cxg85")
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1339428913]
 stream = ExtResource("10_ow5b4")
+bus = &"SFX"
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=1126658654]
+stream = ExtResource("11_bs4nq")
 bus = &"SFX"
