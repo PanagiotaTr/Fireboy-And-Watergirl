@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://drb07acwobglx"
+path="res://.godot/imported/Footsteps of both.wav-37f97e2bf903e32eaba51dd51281d641.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Footsteps of both.wav"
+dest_files=["res://.godot/imported/Footsteps of both.wav-37f97e2bf903e32eaba51dd51281d641.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

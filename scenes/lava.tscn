@@ -1,0 +1,23 @@
+[gd_scene format=4 uid="uid://d2u0qufjrqx66"]
+
+[ext_resource type="Texture2D" uid="uid://opcxbp7v8hwc" path="res://assets/sprites/terrain/lava.png" id="1_a5s42"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
+texture = ExtResource("1_a5s42")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 0.8
+0:0/animation_frame_1/duration = 0.8
+0:0/animation_frame_2/duration = 0.8
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -0.95589256, 16, -1.2745228, 16, 16, -16, 16)
+
+[sub_resource type="TileSet" id="TileSet_d21ai"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_kdubu")
+
+[node name="Lava" type="TileMapLayer" unique_id=268007458]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAD4/wgAAAAAAAAAAAD5/wgAAAAAAAAAAAD6/wgAAAAAAAAAAAD7/wgAAAAAAAAAAAD8/wgAAAAAAAAAAAD9/wgAAAAAAAAAAAD+/wgAAAAAAAAAAAD//wgAAAAAAAAAAAAAAAgAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_d21ai")

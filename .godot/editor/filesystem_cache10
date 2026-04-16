@@ -1,0 +1,84 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1776344189
+default_bus_layout.tres::AudioBusLayout::5703445167110567904::1776250917::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::1993433879768203156::1776250657::1776250696::1::::<><><>0<>0<>9ec7c30c885a1ceaa445cea4912e9bee<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+node_2d.tscn::PackedScene::5897140110276767602::1776344173::0::1::::<><><>0<>0<><>::uid://c613x4guqbbfi::::res://scenes/fireboy.tscn<>uid://bp21gobbmx54k::::res://scenes/watergirl.tscn<>uid://opcxbp7v8hwc::::res://assets/sprites/terrain/lava.png<>uid://d2u0qufjrqx66::::res://scenes/lava.tscn<>uid://ckv8vp7v2rde::::res://scenes/red_coin.tscn<>uid://bxbog845muo0b::::res://assets/sprites/terrain/water.png<>uid://cbd4cdgbfkoqb::::res://assets/sprites/terrain/Terrain (32x32).png<>uid://dji3fkrcra8kn::::res://scenes/blue_coin.tscn<>uid://bsxpekhgodg7s::::res://scenes/purple_coin.tscn<>uid://d24it6kgfg41e::::res://scenes/green_coin.tscn<>uid://drua8i2vaffjy::::res://scenes/lever.tscn<>uid://3ax06fq7susm::::res://scenes/moving_platform.tscn
+README.md::TextFile::-1::1776250657::0::1::::<><><>0<>0<><>::
+::res://assets/::1776335233
+::res://assets/images/::1776335255
+::res://assets/images/buttons/::1776344173
+pink-button.png::CompressedTexture2D::5289818718200502254::1776331305::1776344173::1::::<><><>0<>0<>403bbc76780e7f7402580c5cfcf41e66<>res://.godot/imported/pink-button.png-2958ac967eb0d9cc029809e2802ba630.ctex::
+whit-button.png::CompressedTexture2D::1895105700932414029::1776334149::1776344173::1::::<><><>0<>0<>09c7b6f7cf798bb866e726997da763bc<>res://.godot/imported/whit-button.png-11248b7f4522b4a27ca38856e9aae5a4.ctex::
+::res://assets/images/levers/::1776344173
+yellow lever.png::CompressedTexture2D::720767096548078555::1776334921::1776344173::1::::<><><>0<>0<>b2877045898d3c1441fa6ae17e3ca22d<>res://.godot/imported/yellow lever.png-088c5a25f90fb5202cfd446f5fc6318b.ctex::
+::res://assets/images/platforms/::1776344173
+pink platform.png::CompressedTexture2D::9155704120918232030::1776330371::1776344173::1::::<><><>0<>0<>97c3933fb033548cdfe449acb8871bf5<>res://.godot/imported/pink platform.png-dcd136c0cf11db6fc767c4b233d326b9.ctex::
+white platform.png::CompressedTexture2D::6279795361558173251::1776334281::1776344173::1::::<><><>0<>0<>8da9d78cafe474e04db789e762be9356<>res://.godot/imported/white platform.png-81c8b047ef0288fd746275e73819d06a.ctex::
+::res://assets/sounds/::1776344173
+Button Pushed.wav::AudioStreamWAV::5422552217573565656::1776249096::1776250876::1::::<><><>0<>0<>c1c6b16140ad97611b9cd4e4f824fa0f<>res://.godot/imported/Button Pushed.wav-e6b5ce9832cb19bb66fc007f100e3da6.sample::
+Coin Picked.wav::AudioStreamWAV::9192048928674786564::1776249096::1776250876::1::::<><><>0<>0<>d352cb9b797839ce3c1c18630cfd8d47<>res://.godot/imported/Coin Picked.wav-86e4902b9a6dddcdc13e369ca1dd24de.sample::
+Death sound.wav::AudioStreamWAV::2285169207605364555::1776249096::1776250876::1::::<><><>0<>0<>e14d66250a54bd9dbce3e4f7a5cb9d17<>res://.godot/imported/Death sound.wav-82a779cbde0b122a9f421779e7ae00e6.sample::
+Door Opening.wav::AudioStreamWAV::7217205969306654282::1776249096::1776250876::1::::<><><>0<>0<>e47d4ac0098564468e5b08584eb6ba4f<>res://.godot/imported/Door Opening.wav-39b794cc72c9999789a2f1ad6264910e.sample::
+Fireboy in the Lava.wav::AudioStreamWAV::5009120646109769148::1776249096::1776250876::1::::<><><>0<>0<>7e522b909da5ded5ad04d5c4553b8c4d<>res://.godot/imported/Fireboy in the Lava.wav-3f614b7d75625bbefd63755448394b73.sample::
+Fireboy Jump.wav::AudioStreamWAV::8427803140431467750::1776249096::1776250876::1::::<><><>0<>0<>6c5eb313ff9e8e16ebbaf8e299e35c69<>res://.godot/imported/Fireboy Jump.wav-5614484f5aa7c4f0067cc589ccca9d17.sample::
+Footsteps of both.wav::AudioStreamWAV::8356111845011975245::1776249096::1776250876::1::::<><><>0<>0<>56d424ea1f82a55a7139ef461d4ec04b<>res://.godot/imported/Footsteps of both.wav-37f97e2bf903e32eaba51dd51281d641.sample::
+Levers.wav::AudioStreamWAV::1447320787609115323::1776249096::1776250876::1::::<><><>0<>0<>11c865a2fc8bea996ea779e0907b6344<>res://.godot/imported/Levers.wav-e412d031f0db6a679793c1816656e1c2.sample::
+Platform Moving.mp3::AudioStreamMP3::705792743675524797::1776344173::1776344190::1::::<><><>0<>0<>30bd79f34a3051b6756942cedc2e152d<>res://.godot/imported/Platform Moving.mp3-9c310d3becc5aa5888d5443847eaa807.mp3str::
+Platform Moving.wav::AudioStreamWAV::3849101387766282051::1776249096::1776250876::1::::<><><>0<>0<>199736fcecfe9c5a707ef0e1918e7533<>res://.godot/imported/Platform Moving.wav-926abefea956160e500a70da0b1987f6.sample::
+Watergirl in the Water.wav::AudioStreamWAV::7195916119622294349::1776249096::1776250876::1::::<><><>0<>0<>b06b55a9e6d8519a49dc435eec6a89a6<>res://.godot/imported/Watergirl in the Water.wav-204f5d4aa8cd252338394d88cdeaae12.sample::
+Watergirl Jump.wav::AudioStreamWAV::3259812103777802308::1776249096::1776250876::1::::<><><>0<>0<>a10a762af5b3eb52320c44e8ea8bd1ca<>res://.godot/imported/Watergirl Jump.wav-c14ce0a441393c21a39a24848cdfc655.sample::
+When a pusher is pushed.wav::AudioStreamWAV::3844295748536997171::1776249096::1776250876::1::::<><><>0<>0<>c227345a42f69e8820065d005ba711ce<>res://.godot/imported/When a pusher is pushed.wav-acaea9429c89bf778dd0867a5d0c74dc.sample::
+::res://assets/sprites/::1776250657
+::res://assets/sprites/coins/::1776250698
+fire_coin.png::CompressedTexture2D::222868804386991961::1776250657::1776250698::1::::<><><>0<>0<>742772b4613b0ff660fe8851edb236df<>res://.godot/imported/fire_coin.png-79c27cf14251d2b2ed8f778dbd1f5491.ctex::
+green_coin.png::CompressedTexture2D::3974724559543603296::1776250657::1776250697::1::::<><><>0<>0<>d213a60001af3ada52038b6e153e7d6f<>res://.godot/imported/green_coin.png-3e0f83e8611e97b7e367f3c24c0e364d.ctex::
+purple_coin.png::CompressedTexture2D::3652059376667771390::1776250657::1776250697::1::::<><><>0<>0<>3ce0ec4a49cdac53c6f9080be107e51f<>res://.godot/imported/purple_coin.png-e5052203054711a0637796e288c23306.ctex::
+water_coin.png::CompressedTexture2D::9093273566266406651::1776250657::1776250697::1::::<><><>0<>0<>2b05b7028916ed6e9ad69ee9a70d20cd<>res://.godot/imported/water_coin.png-f713307558fe0a15268310b5def1815c.ctex::
+::res://assets/sprites/fireboy/::1776250698
+body-idle.png::CompressedTexture2D::969421930193409651::1776250657::1776250697::1::::<><><>0<>0<>4d4f3dba4e433e3467633b814c4d7f08<>res://.godot/imported/body-idle.png-1e07def22b64b67e8fe5f4bcba76b014.ctex::
+body-run.png::CompressedTexture2D::3627315447577774284::1776250657::1776250697::1::::<><><>0<>0<>ddb0a7fe0b94d93631747f72611709bd<>res://.godot/imported/body-run.png-bc9a5089e68ce38fbf46b63efbadbee2.ctex::
+Fireboy.png::CompressedTexture2D::5210887600541238413::1776250657::1776250698::1::::<><><>0<>0<>5ba193a590dc1579d3ea4456847b8c36<>res://.godot/imported/Fireboy.png-0c5b2db569ddd5dbb2c0a98c4c774f3c.ctex::
+head-fall.png::CompressedTexture2D::6566830498798236163::1776250657::1776250698::1::::<><><>0<>0<>6e7e4f81ccf14c172dbba77bbff4bfa8<>res://.godot/imported/head-fall.png-26a888d6e25909ac29e1b24ef88a2b35.ctex::
+head-idle.png::CompressedTexture2D::2575638952077663646::1776250657::1776250697::1::::<><><>0<>0<>9f709798db7fcbb12784d7cf99a5613d<>res://.godot/imported/head-idle.png-19c00582482a56470645916503a54c25.ctex::
+head-jump&run.png::CompressedTexture2D::7580908384415922432::1776250657::1776250697::1::::<><><>0<>0<>76960c99ba6192b18eda5e95297e7d5a<>res://.godot/imported/head-jump&run.png-5c91a04330182ee8d703b6f2dcc4af5a.ctex::
+head-jump.png::CompressedTexture2D::1966456320643942427::1776250657::1776250697::1::::<><><>0<>0<>60916c2325faf371983c695b54ac3267<>res://.godot/imported/head-jump.png-580ba611155eae8773b0f4b9ca01f019.ctex::
+head-run2.png::CompressedTexture2D::3374661045011000513::1776250657::1776250697::1::::<><><>0<>0<>bbd17be3f693e8921f35c886129fbca7<>res://.godot/imported/head-run2.png-41757663dc238cd387b7ae4ddb8e7875.ctex::
+head-run_fall.png::CompressedTexture2D::2827955378212950006::1776250657::1776250697::1::::<><><>0<>0<>45ef8af6bf5d68ad126136f53cb0cbdb<>res://.godot/imported/head-run_fall.png-442cfbe9e46ef9905699fb78ae3f9f05.ctex::
+head-run_jump.png::CompressedTexture2D::6007631438749297945::1776250657::1776250697::1::::<><><>0<>0<>62c7161801eca2e09f478e74c48b42a0<>res://.godot/imported/head-run_jump.png-d9358dae326fbd3004ea3098001ca345.ctex::
+::res://assets/sprites/liquids/::1776250697
+green.png::CompressedTexture2D::2407295112643125151::1776250657::1776250697::1::::<><><>0<>0<>a7c09fd7f49cae98839c74ffd334447b<>res://.godot/imported/green.png-ee2be36dab0834474410e2220c02ef0e.ctex::
+lava.png::CompressedTexture2D::2734391673795008621::1776250657::1776250697::1::::<><><>0<>0<>5fa6d3300dc461e3657ad6d2f14e33c4<>res://.godot/imported/lava.png-99f62ae71dfd4ae9217a2e95746e3b7b.ctex::
+purple.png::CompressedTexture2D::95512490336157457::1776250657::1776250697::1::::<><><>0<>0<>a1c3f0e3f7375700211f5d0dcc09f8c7<>res://.godot/imported/purple.png-ec0d2d5f519e1ea4bf17a83a80737d40.ctex::
+water.png::CompressedTexture2D::3113279367300001397::1776250657::1776250696::1::::<><><>0<>0<>4301e28d340a9438cd1fa9c1c48979fb<>res://.godot/imported/water.png-f81e3b40e04e2ca3867d862335299386.ctex::
+::res://assets/sprites/terrain/::1776250697
+lava.png::CompressedTexture2D::1013772061667414434::1776250657::1776250696::1::::<><><>0<>0<>d98cb5a39a26cdbad928a25496169bf6<>res://.godot/imported/lava.png-f193e5355f7c404681f2e97680ecff1a.ctex::
+Terrain (32x32).png::CompressedTexture2D::4850987875555854873::1776250657::1776250697::1::::<><><>0<>0<>822e598291b06dc160e6a1a308e3f0ae<>res://.godot/imported/Terrain (32x32).png-60c17e3fc1d5e807bcf2062f8a9bc304.ctex::
+water.png::CompressedTexture2D::4003690997233850219::1776250657::1776250696::1::::<><><>0<>0<>2fb1a3bca0732b37b8b64a72670465af<>res://.godot/imported/water.png-4f6439dadcd09c5ff419795ff2e76d78.ctex::
+::res://assets/sprites/watergirl/::1776250699
+body_idle.png::CompressedTexture2D::1390368927673919889::1776250657::1776250696::1::::<><><>0<>0<>6dc6ee42f384999290530d5addd66376<>res://.godot/imported/body_idle.png-96f7384310fed27536fe59de9bad72d7.ctex::
+body_run.png::CompressedTexture2D::2218119251629440482::1776250657::1776250696::1::::<><><>0<>0<>de381a006ba4bf117669852a5bb4f044<>res://.godot/imported/body_run.png-5f2992113d67344d3220e1b8e96e9398.ctex::
+head_fall.png::CompressedTexture2D::3600106835037878168::1776250657::1776250697::1::::<><><>0<>0<>60d408efebeb13cd6f822fb72f2fad1d<>res://.godot/imported/head_fall.png-03f505daf8d6294981aff97ff37b2956.ctex::
+head_idle.png::CompressedTexture2D::5389437040026904111::1776250657::1776250697::1::::<><><>0<>0<>ade1934f83ee8a967fcae69231a81ef3<>res://.godot/imported/head_idle.png-87b17a6074766b1db125043bde5e295f.ctex::
+head_jump_idle.png::CompressedTexture2D::2974628974445091956::1776250657::1776250697::1::::<><><>0<>0<>c9a851206c4e2d939a4ec24e747b1f2a<>res://.godot/imported/head_jump_idle.png-88952680b7dc4c4973e45d5888c522c7.ctex::
+head_jump_up.png::CompressedTexture2D::471853966215577234::1776250657::1776250697::1::::<><><>0<>0<>b87e8690238507f4c346ca1a8e207af5<>res://.godot/imported/head_jump_up.png-ad88570f56fd13c5646ecdc308d60e60.ctex::
+head_run.png::CompressedTexture2D::7281303308326290244::1776250657::1776250697::1::::<><><>0<>0<>d2249c324a4c3f2e8b36ceb6575525f4<>res://.godot/imported/head_run.png-8d46c257fbee12b1fbd3dcb78d5a115b.ctex::
+watergirl full parts sprite.png::CompressedTexture2D::1151241396411276814::1776250657::1776250699::1::::<><><>0<>0<>638048b83f07919396a7a0d8fe36cdec<>res://.godot/imported/watergirl full parts sprite.png-5e86614365223d2ae08a5d9ca14d8560.ctex::
+::res://scenes/::1776344173
+blue_coin.tscn::PackedScene::7809186222229861877::1776251926::0::1::::<><><>0<>0<><>::uid://d2s35fqjwpn7p::::res://assets/sprites/coins/water_coin.png<>uid://d4ie6lj6ims4r::::res://scripts/blue_coin.gd<>uid://d37xx5saagcrk::::res://assets/sounds/Coin Picked.wav
+fireboy.tscn::PackedScene::7004112024204144958::1776344173::0::1::::<><><>0<>0<><>::uid://n2uicu5uf2od::::res://assets/sprites/fireboy/body-idle.png<>uid://br36fydnjvg77::::res://scripts/fireboy.gd<>uid://bcxwnrg6v4o3w::::res://assets/sprites/fireboy/head-idle.png<>uid://brxdmc6fubid5::::res://assets/sprites/fireboy/body-run.png<>uid://c0ta0efkk80dr::::res://assets/sprites/fireboy/head-fall.png<>uid://bgj5an1dm8opy::::res://assets/sprites/fireboy/head-run_fall.png<>uid://bocyf6tle33tl::::res://assets/sprites/fireboy/head-run2.png<>uid://3atipbd0l1bj::::res://assets/sprites/fireboy/head-jump.png<>uid://crue2u0uyymv6::::res://assets/sprites/fireboy/head-run_jump.png<>uid://dscqxlqqk86ys::::res://assets/sounds/Fireboy Jump.wav
+green_coin.tscn::PackedScene::9114749094151698860::1776251872::0::1::::<><><>0<>0<><>::uid://cmmkeck5d5ssy::::res://scripts/green_coin.gd<>uid://bwvnerq3igiei::::res://assets/sprites/coins/green_coin.png<>uid://d37xx5saagcrk::::res://assets/sounds/Coin Picked.wav
+lava.tscn::PackedScene::9097195940532331017::1776250657::0::1::::<><><>0<>0<><>::uid://opcxbp7v8hwc::::res://assets/sprites/terrain/lava.png
+lever.tscn::PackedScene::8393819342056777702::1776344173::0::1::::<><><>0<>0<><>::uid://kje6twte31hf::::res://assets/images/levers/yellow lever.png<>uid://cl47orejcaldp::::res://scripts/lever.gd
+moving_platform.tscn::PackedScene::1966730394264495120::1776344173::0::1::::<><><>0<>0<><>::uid://d3pddyiips60q::::res://assets/images/platforms/pink platform.png<>uid://bop1xc0ifrnc2::::res://scripts/moving_platform.gd<>uid://kb5kkxxhsqgr::::res://assets/sounds/Platform Moving.mp3
+purple_coin.tscn::PackedScene::3698218991926754914::1776253277::0::1::::<><><>0<>0<><>::uid://bfwe8ud0sylqd::::res://scripts/purple_coin.gd<>uid://bsbc5ck6wr7uo::::res://assets/sprites/coins/purple_coin.png<>uid://d37xx5saagcrk::::res://assets/sounds/Coin Picked.wav
+red_coin.tscn::PackedScene::162356580509116694::1776253277::0::1::::<><><>0<>0<><>::uid://b14c4pe7o72v7::::res://scripts/red_coin.gd<>uid://df7u73xg513j::::res://assets/sprites/coins/fire_coin.png<>uid://d37xx5saagcrk::::res://assets/sounds/Coin Picked.wav
+watergirl.tscn::PackedScene::3496581631132675764::1776344173::0::1::::<><><>0<>0<><>::uid://t2rf5dwh7xu4::::res://assets/sprites/watergirl/body_idle.png<>uid://cj6d0b2t15pfc::::res://scripts/watergirl.gd<>uid://6uqdnurxmlnm::::res://assets/sprites/watergirl/body_run.png<>uid://brj6h7bb517pk::::res://assets/sprites/watergirl/head_fall.png<>uid://ci1xigghoitoh::::res://assets/sprites/watergirl/head_idle.png<>uid://bim6x7sahkixg::::res://assets/sprites/watergirl/head_jump_idle.png<>uid://db0eab65ijaho::::res://assets/sprites/watergirl/head_run.png<>uid://gytmo70c8ykw::::res://assets/sprites/watergirl/head_jump_up.png<>uid://bmpcvnhssurb5::::res://assets/sounds/Watergirl Jump.wav
+::res://scripts/::1776344173
+blue_coin.gd::GDScript::9211552359276611763::1776251559::0::1::::<>Area2D<><>0<>0<><>::
+fireboy.gd::GDScript::3639326024196947856::1776344173::0::1::::<>CharacterBody2D<><>0<>0<><>::
+green_coin.gd::GDScript::5640494459057608996::1776251900::0::1::::<>Area2D<><>0<>0<><>::
+lever.gd::GDScript::5606754446643261665::1776344173::0::1::::<>Node2D<><>0<>0<><>::
+moving_platform.gd::GDScript::3401650020045850795::1776344173::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+purple_coin.gd::GDScript::2783084067904817807::1776253277::0::1::::<>Area2D<><>0<>0<><>::
+red_coin.gd::GDScript::4271371590661853238::1776253277::0::1::::<>Area2D<><>0<>0<><>::
+watergirl.gd::GDScript::5468763561462552216::1776344173::0::1::::<>CharacterBody2D<><>0<>0<><>::

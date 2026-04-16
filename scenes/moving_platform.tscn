@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://3ax06fq7susm"]
+
+[ext_resource type="Texture2D" uid="uid://d3pddyiips60q" path="res://assets/images/platforms/pink platform.png" id="1_1tdcd"]
+[ext_resource type="Script" uid="uid://bop1xc0ifrnc2" path="res://scripts/moving_platform.gd" id="1_mb26n"]
+[ext_resource type="AudioStream" uid="uid://kb5kkxxhsqgr" path="res://assets/sounds/Platform Moving.mp3" id="3_mb26n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afg43"]
+size = Vector2(129, 22)
+
+[node name="MovingPlatform" type="AnimatableBody2D" unique_id=350428035]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_mb26n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=19150281]
+texture = ExtResource("1_1tdcd")
+region_enabled = true
+region_rect = Rect2(1.3937225, 5.052704, 137.98558, 37.70903)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=659057503]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_afg43")
+
+[node name="MoveSound" type="AudioStreamPlayer2D" parent="." unique_id=1810433766]
+stream = ExtResource("3_mb26n")
+pitch_scale = 0.5
+bus = &"SFX"

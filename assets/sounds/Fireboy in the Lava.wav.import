@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cdmpqq5j5a4ce"
+path="res://.godot/imported/Fireboy in the Lava.wav-3f614b7d75625bbefd63755448394b73.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Fireboy in the Lava.wav"
+dest_files=["res://.godot/imported/Fireboy in the Lava.wav-3f614b7d75625bbefd63755448394b73.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

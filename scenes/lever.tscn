@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://drua8i2vaffjy"]
+
+[ext_resource type="Texture2D" uid="uid://kje6twte31hf" path="res://assets/images/levers/yellow lever.png" id="1_4kwec"]
+[ext_resource type="Script" uid="uid://cl47orejcaldp" path="res://scripts/lever.gd" id="1_ncfea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncfea"]
+size = Vector2(65, 53)
+
+[node name="Lever" type="Node2D" unique_id=803711641]
+script = ExtResource("1_ncfea")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790812106]
+texture = ExtResource("1_4kwec")
+region_enabled = true
+region_rect = Rect2(0, 8.033531, 76, 56.96647)
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1559561479]
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1483460520]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_ncfea")

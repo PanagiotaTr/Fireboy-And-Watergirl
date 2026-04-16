@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b3wy8sb631hp6"]
+
+[ext_resource type="Script" uid="uid://wbed608g4s3a" path="res://scripts/button_plate.gd" id="1_3syjn"]
+[ext_resource type="Texture2D" uid="uid://chmosn5vgmq7o" path="res://assets/images/buttons/pink-button.png" id="1_6qrpi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3syjn"]
+size = Vector2(53, 15)
+
+[node name="ButtonPlate" type="Node2D" unique_id=1618439526]
+script = ExtResource("1_3syjn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=550470938]
+texture = ExtResource("1_6qrpi")
+region_enabled = true
+region_rect = Rect2(19.80959, 38.69857, 60.403347, 23.597626)
+
+[node name="TriggerArea" type="Area2D" parent="." unique_id=828474837]
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=8212905]
+position = Vector2(-0.5, 2.5)
+shape = SubResource("RectangleShape2D_3syjn")

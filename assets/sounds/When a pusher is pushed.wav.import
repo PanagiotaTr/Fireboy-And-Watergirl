@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bu1g8vwhvb35p"
+path="res://.godot/imported/When a pusher is pushed.wav-acaea9429c89bf778dd0867a5d0c74dc.sample"
+
+[deps]
+
+source_file="res://assets/sounds/When a pusher is pushed.wav"
+dest_files=["res://.godot/imported/When a pusher is pushed.wav-acaea9429c89bf778dd0867a5d0c74dc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
