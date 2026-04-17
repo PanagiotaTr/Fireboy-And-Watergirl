@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://3ax06fq7susm" path="res://scenes/moving_platform.tscn" id="12_x0ka3"]
 [ext_resource type="PackedScene" uid="uid://b3wy8sb631hp6" path="res://scenes/button_plate.tscn" id="13_0h7mo"]
 [ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="13_flf07"]
+[ext_resource type="PackedScene" uid="uid://c68hyykf16g3d" path="res://scenes/door_fireboy.tscn" id="16_ta5nu"]
 
 [sub_resource type="TileSet" id="TileSet_k73cj"]
 
@@ -281,6 +282,9 @@ sources/8 = SubResource("TileSetAtlasSource_e8dv2")
 
 [node name="Background" type="TileMapLayer" parent="." unique_id=646780204]
 tile_set = SubResource("TileSet_k73cj")
+
+[node name="Door" parent="." unique_id=226259691 instance=ExtResource("16_ta5nu")]
+position = Vector2(229, 233)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("1_wtcfe")]
 position = Vector2(-489, 232.00002)
