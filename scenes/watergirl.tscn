@@ -326,6 +326,7 @@ radius = 98.0
 height = 278.0
 
 [node name="Watergirl" type="CharacterBody2D" unique_id=1759271356 groups=["player", "watergirl"]]
+scale = Vector2(0.15, 0.15)
 collision_layer = 2
 script = ExtResource("1_e2aqf")
 

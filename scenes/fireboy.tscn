@@ -308,6 +308,7 @@ radius = 98.0
 height = 278.0
 
 [node name="Fireboy" type="CharacterBody2D" unique_id=769429523 groups=["fireboy", "player"]]
+scale = Vector2(0.15, 0.15)
 collision_layer = 4
 script = ExtResource("1_p3ilj")
 
