@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c613x4guqbbfi" path="res://scenes/fireboy.tscn" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://bp21gobbmx54k" path="res://scenes/watergirl.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://bjvhkceb6kac2" path="res://scenes/door_watergirl.tscn" id="2_flf07"]
 [ext_resource type="PackedScene" uid="uid://ckv8vp7v2rde" path="res://scenes/red_coin.tscn" id="4_rj586"]
 [ext_resource type="Texture2D" uid="uid://cbd4cdgbfkoqb" path="res://assets/sprites/terrain/Terrain (32x32).png" id="6_kdubu"]
 [ext_resource type="PackedScene" uid="uid://dji3fkrcra8kn" path="res://scenes/blue_coin.tscn" id="8_rj586"]
@@ -14,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://3ax06fq7susm" path="res://scenes/moving_platform.tscn" id="12_x0ka3"]
 [ext_resource type="PackedScene" uid="uid://b3wy8sb631hp6" path="res://scenes/button_plate.tscn" id="13_0h7mo"]
 [ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="13_flf07"]
+[ext_resource type="Script" uid="uid://cqsb2f05hafdk" path="res://scripts/win_manager_level1.gd" id="16_flf07"]
 [ext_resource type="PackedScene" uid="uid://c68hyykf16g3d" path="res://scenes/door_fireboy.tscn" id="16_ta5nu"]
 
 [sub_resource type="TileSet" id="TileSet_k73cj"]
@@ -286,13 +288,14 @@ tile_set = SubResource("TileSet_k73cj")
 [node name="Door" parent="." unique_id=226259691 instance=ExtResource("16_ta5nu")]
 position = Vector2(229, 233)
 
+[node name="Door2" parent="." unique_id=1393078472 instance=ExtResource("2_flf07")]
+position = Vector2(-390, 232)
+
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("1_wtcfe")]
 position = Vector2(-489, 232.00002)
-scale = Vector2(0.15, 0.15)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("2_0e48y")]
 position = Vector2(185, 235)
-scale = Vector2(0.15, 0.15)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(1, 59)
@@ -362,6 +365,11 @@ position = Vector2(-251, 35)
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=656246726]
 tile_map_data = PackedByteArray("AAD8/wgABAAAAAAAAAD9/wgABAAAAAAAAAAAAAgABgAAAAAAAAABAAgABgAAAAAAAAD1/wgABQAAAAAAAAD2/wgABQAAAAAAAAD4/wgABwAAAAAAAAD5/wgABwAAAAAAAADv/wgACAAFAAUAAADw/wgACAAFAAUAAADx/wgACAAFAAUAAADy/wgACAAFAAUAAADz/wgACAAFAAUAAAD0/wgACAAFAAUAAAD3/wgACAAFAAUAAAD6/wgACAAFAAUAAAD7/wgACAAFAAUAAAD+/wgACAAFAAUAAAD//wgACAAFAAUAAAACAAgACAAFAAUAAAADAAgACAAFAAUAAAAEAAgACAAFAAUAAAAFAAgACAAFAAUAAAAGAAgACAAFAAUAAAAHAAgACAAFAAUAAAA=")
 tile_set = SubResource("TileSet_2nhjh")
+
+[node name="WinManager" type="Node2D" parent="." unique_id=335660946]
+script = ExtResource("16_flf07")
+fire_door = NodePath("../Door")
+water_door = NodePath("../Door2")
 
 [connection signal="toggled" from="Lever" to="MovingPlatform" method="set_active"]
 [connection signal="toggled" from="ButtonPlate" to="MovingPlatform2" method="set_active"]
