@@ -22,7 +22,7 @@ func _on_body_exited(body: Node) -> void:
 	if body.is_in_group(allowed_group):
 		for n in range(7):
 			front_parts.get_child(n).visible = false
-		anim.play_backwards("close2")
+		anim.play("close2")
 		is_opened = false
 
 func _on_animation_finished(anim_name: StringName) -> void:

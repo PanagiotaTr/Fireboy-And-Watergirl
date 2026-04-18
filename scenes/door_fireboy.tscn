@@ -1,16 +1,17 @@
 [gd_scene format=3 uid="uid://c68hyykf16g3d"]
 
-[ext_resource type="Script" uid="uid://dgkm51ollqwf3" path="res://scripts/door_fireboy.gd" id="1_q5car"]
-[ext_resource type="Texture2D" uid="uid://bvtb3okcuslme" path="res://assets/images/door-watergirl/Door Inside.png" id="2_lopkt"]
-[ext_resource type="Texture2D" uid="uid://bt2hcex7wrgdi" path="res://assets/images/door-watergirl/row-1-column-1.png" id="3_im6wq"]
-[ext_resource type="Texture2D" uid="uid://bv1fstv3d03cc" path="res://assets/images/door-watergirl/row-2-column-1.png" id="4_uvw60"]
+[ext_resource type="Script" uid="uid://b5c10m51negcb" path="res://scripts/door_fireboy.gd" id="1_q5car"]
+[ext_resource type="Texture2D" uid="uid://chui8cmdwwf6s" path="res://assets/images/door-watergirl/Door Inside.png" id="2_lopkt"]
+[ext_resource type="Texture2D" uid="uid://cxbtuk2prtp2i" path="res://assets/images/door-watergirl/row-1-column-1.png" id="3_im6wq"]
+[ext_resource type="Texture2D" uid="uid://dwjrimwvpax2v" path="res://assets/images/door-watergirl/row-2-column-1.png" id="4_uvw60"]
 [ext_resource type="Texture2D" uid="uid://dvvbe4ifk6rrd" path="res://assets/images/door-fireboy/row-3-column-1 (1).png" id="5_q5car"]
 [ext_resource type="Texture2D" uid="uid://dmacledgv14fl" path="res://assets/images/door-fireboy/row-4-column-1 (1).png" id="6_lopkt"]
 [ext_resource type="Texture2D" uid="uid://cmcliv73aaxsv" path="res://assets/images/door-fireboy/row-5-column-1 (1).png" id="7_im6wq"]
 [ext_resource type="Texture2D" uid="uid://yadnqarrss2f" path="res://assets/images/door-fireboy/row-6-column-1 (1).png" id="8_uvw60"]
 [ext_resource type="Texture2D" uid="uid://b1lhj5k0u388i" path="res://assets/images/door-fireboy/row-7-column-1.png" id="9_nwebc"]
-[ext_resource type="Texture2D" uid="uid://bdyg0peu605q1" path="res://assets/images/door-watergirl/row-8-column-1.png" id="10_cydtu"]
-[ext_resource type="Texture2D" uid="uid://y370lf5632dn" path="res://assets/images/door-watergirl/row-9-column-1.png" id="11_bqhwh"]
+[ext_resource type="Texture2D" uid="uid://ckqlcal2j43ha" path="res://assets/images/door-watergirl/row-8-column-1.png" id="10_cydtu"]
+[ext_resource type="Texture2D" uid="uid://cmy0akfmsqvkp" path="res://assets/images/door-watergirl/row-9-column-1.png" id="11_bqhwh"]
+[ext_resource type="AudioStream" uid="uid://da3clfareru5w" path="res://assets/sounds/Door Opening.wav" id="12_lopkt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eqc36"]
 size = Vector2(148, 193)
@@ -136,6 +137,18 @@ tracks/9/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_ubeq5"]
@@ -274,7 +287,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(0, -23), Vector2(0, -46), Vector2(0, -69), Vector2(0, -92), Vector2(0, -115), Vector2(0, -138), Vector2(0, -161), Vector2(0, -184)]
+"values": [Vector2(0, -184), Vector2(0, -161), Vector2(0, -138), Vector2(0, -115), Vector2(0, -92), Vector2(0, -69), Vector2(0, -46), Vector2(0, -23), Vector2(0, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -283,7 +296,7 @@ tracks/1/path = NodePath("FrontParts/Sprite2D:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.1),
+"times": PackedFloat32Array(0.7),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -295,7 +308,7 @@ tracks/2/path = NodePath("FrontParts/Sprite2D2:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.2),
+"times": PackedFloat32Array(0.60789996),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -307,7 +320,7 @@ tracks/3/path = NodePath("FrontParts/Sprite2D3:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.3),
+"times": PackedFloat32Array(0.5079),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -319,7 +332,7 @@ tracks/4/path = NodePath("FrontParts/Sprite2D4:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0.4),
+"times": PackedFloat32Array(0.40789998),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -331,7 +344,7 @@ tracks/5/path = NodePath("FrontParts/Sprite2D5:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.5),
+"times": PackedFloat32Array(0.30789998),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -343,7 +356,7 @@ tracks/6/path = NodePath("FrontParts/Sprite2D6:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0.6),
+"times": PackedFloat32Array(0.20789999),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -355,7 +368,7 @@ tracks/7/path = NodePath("FrontParts/Sprite2D7:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0.7),
+"times": PackedFloat32Array(0.10789998),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -367,7 +380,7 @@ tracks/8/path = NodePath("FrontParts/Sprite2D8:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0.8),
+"times": PackedFloat32Array(0.007899977),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -379,10 +392,22 @@ tracks/9/path = NodePath("FrontParts/Sprite2D9:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(0.9),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_d7wy2"]
@@ -508,6 +533,18 @@ tracks/9/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1ff4c"]
 _data = {
@@ -579,3 +616,8 @@ shape = SubResource("RectangleShape2D_eqc36")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1705799571]
 libraries/ = SubResource("AnimationLibrary_1ff4c")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=42385537]
+stream = ExtResource("12_lopkt")
+pitch_scale = 0.6
+bus = &"SFX"
