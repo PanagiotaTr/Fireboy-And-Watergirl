@@ -24,16 +24,50 @@ func die():
 	await death_sound.finished
 	queue_free()
 	
+#func check_tile():
+	#var tilemap = get_parent().get_node("Blocks")
+	#var cell = tilemap.local_to_map(tilemap.to_local(global_position))
+	#var tile_data = tilemap.get_cell_tile_data(cell)
+#
+	#if tile_data:
+		#var tile_type = tile_data.get_custom_data("type")
+#
+		#if tile_type == "fire" or tile_type == "green" or tile_type == "purple":
+			#die()
+
 func check_tile():
 	var tilemap = get_parent().get_node("Blocks")
-	var cell = tilemap.local_to_map(tilemap.to_local(global_position))
+
+	var feet_pos = global_position + Vector2(0, 14)
+	var local_pos = tilemap.to_local(feet_pos)
+	var cell = tilemap.local_to_map(local_pos)
 	var tile_data = tilemap.get_cell_tile_data(cell)
 
-	if tile_data:
-		var tile_type = tile_data.get_custom_data("type")
+	print("feet_pos: ", feet_pos)
+	print("cell: ", cell)
 
-		if tile_type == "fire" or tile_type == "green" or tile_type == "purple":
-			die()
+	if tile_data == null:
+		print("NO TILE DATA")
+		return
+
+	var tile_type = tile_data.get_custom_data("type")
+	var kill_height = tile_data.get_custom_data("kill_height")
+
+	print("tile_type: ", tile_type)
+	print("kill_height: ", kill_height)
+
+	if tile_type == null or kill_height == null:
+		print("MISSING CUSTOM DATA")
+		return
+
+	var tile_origin = tilemap.map_to_local(cell)
+	var y_in_tile = local_pos.y - tile_origin.y
+
+	print("y_in_tile: ", y_in_tile)
+
+	if tile_type in ["lava", "green", "purple"] and y_in_tile >= 0 and y_in_tile <= kill_height:
+		print("DIE")
+		die()
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
