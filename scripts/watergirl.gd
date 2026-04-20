@@ -23,17 +23,6 @@ func die():
 	death_sound.play()
 	await death_sound.finished
 	queue_free()
-	
-#func check_tile():
-	#var tilemap = get_parent().get_node("Blocks")
-	#var cell = tilemap.local_to_map(tilemap.to_local(global_position))
-	#var tile_data = tilemap.get_cell_tile_data(cell)
-#
-	#if tile_data:
-		#var tile_type = tile_data.get_custom_data("type")
-#
-		#if tile_type == "fire" or tile_type == "green" or tile_type == "purple":
-			#die()
 
 func check_tile():
 	var tilemap = get_parent().get_node("Blocks")

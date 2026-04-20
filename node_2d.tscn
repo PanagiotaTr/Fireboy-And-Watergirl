@@ -4,14 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://bp21gobbmx54k" path="res://scenes/watergirl.tscn" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://bjvhkceb6kac2" path="res://scenes/door_watergirl.tscn" id="2_flf07"]
 [ext_resource type="PackedScene" uid="uid://ckv8vp7v2rde" path="res://scenes/red_coin.tscn" id="4_rj586"]
-[ext_resource type="Texture2D" uid="uid://b407py0wmcyt4" path="res://assets/sprites/terrain/Terrain (32x32).png" id="6_kdubu"]
+[ext_resource type="Texture2D" uid="uid://cbd4cdgbfkoqb" path="res://assets/sprites/terrain/Terrain (32x32).png" id="6_kdubu"]
 [ext_resource type="PackedScene" uid="uid://dji3fkrcra8kn" path="res://scenes/blue_coin.tscn" id="8_rj586"]
 [ext_resource type="PackedScene" uid="uid://bsxpekhgodg7s" path="res://scenes/purple_coin.tscn" id="9_4d7sh"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="10_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://bakd2fn3sgehr" path="res://assets/sprites/liquids/green.png" id="10_nr8wp"]
 [ext_resource type="PackedScene" uid="uid://drua8i2vaffjy" path="res://scenes/lever.tscn" id="11_hqns4"]
 [ext_resource type="Texture2D" uid="uid://dufj73tqmvnkg" path="res://assets/sprites/liquids/Green sprite vol2.png" id="12_ei405"]
-[ext_resource type="Texture2D" uid="uid://bpk0erv8hvg4t" path="res://assets/sprites/liquids/lava3.png" id="12_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://do12cqduekajo" path="res://assets/sprites/liquids/lava3.png" id="12_rjqkl"]
 [ext_resource type="Texture2D" uid="uid://bmjcu0a4vgnh" path="res://assets/sprites/liquids/purple.png" id="12_ta5nu"]
 [ext_resource type="PackedScene" uid="uid://3ax06fq7susm" path="res://scenes/moving_platform.tscn" id="12_x0ka3"]
 [ext_resource type="PackedScene" uid="uid://b3wy8sb631hp6" path="res://scenes/button_plate.tscn" id="13_0h7mo"]
@@ -19,9 +19,18 @@
 [ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="13_flf07"]
 [ext_resource type="Texture2D" uid="uid://diddxmcc6sx0r" path="res://assets/sprites/liquids/lava2.png" id="13_fs4d3"]
 [ext_resource type="Texture2D" uid="uid://cr7jph1eb84i7" path="res://assets/sprites/liquids/Water sprite vol2.png" id="15_2nhjh"]
+[ext_resource type="Texture2D" uid="uid://spuekmirhah8" path="res://assets/sprites/liquids/green2.png" id="15_bjha6"]
 [ext_resource type="Script" uid="uid://deevj0mrsoqry" path="res://scripts/win_manager_level1.gd" id="16_flf07"]
+[ext_resource type="Texture2D" uid="uid://crkjrhghvd6sn" path="res://assets/sprites/liquids/green3.png" id="16_gt76g"]
 [ext_resource type="PackedScene" uid="uid://c68hyykf16g3d" path="res://scenes/door_fireboy.tscn" id="16_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://lj31h7h6d6qu" path="res://assets/sprites/liquids/purple1.png" id="17_2hxjc"]
 [ext_resource type="Texture2D" uid="uid://b4f4ue6djh4de" path="res://assets/sprites/liquids/lava1.png" id="18_7vxoj"]
+[ext_resource type="Texture2D" uid="uid://d2el0nuoed8g2" path="res://assets/sprites/liquids/purple2.png" id="18_ebxd8"]
+[ext_resource type="Texture2D" uid="uid://buhob5a4fnq1l" path="res://assets/sprites/liquids/purple3.png" id="19_2u7jv"]
+[ext_resource type="Texture2D" uid="uid://kecjwtu1f7h7" path="res://assets/sprites/liquids/green1.png" id="20_1fr6y"]
+[ext_resource type="Texture2D" uid="uid://cvutu26473ggy" path="res://assets/sprites/liquids/water1.png" id="20_24dk6"]
+[ext_resource type="Texture2D" uid="uid://w5xfam1gvhth" path="res://assets/sprites/liquids/water2.png" id="21_mryly"]
+[ext_resource type="Texture2D" uid="uid://bujov638kxy8p" path="res://assets/sprites/liquids/water3.png" id="22_kq1c5"]
 
 [sub_resource type="TileSet" id="TileSet_k73cj"]
 
@@ -82,6 +91,110 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/custom_data_0 = "lava"
 0:0/0/custom_data_1 = 10.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2u7jv"]
+texture = ExtResource("15_bjha6")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -5.7060394, 16, -6.9397774, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -6.631342, 16, -6.631342, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "green"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_24dk6"]
+texture = ExtResource("16_gt76g")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.248211, 8.173515, -8.790384, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -6.9397774, 8.173515, -7.86508, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "green"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kq1c5"]
+texture = ExtResource("17_2hxjc")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.332556, -9.407253, 16, -8.173515, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-10.949425, -10.332556, 16, -6.9397774, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "purple"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ornx7"]
+texture = ExtResource("18_ebxd8")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -6.014473, 16, -6.014473, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -5.0891685, 16, -6.014473, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "purple"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cnnru"]
+texture = ExtResource("19_2u7jv")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -5.7060394, 6.9397774, -9.407253, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -5.7060394, 7.5566483, -9.715687, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "purple"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_540hr"]
+texture = ExtResource("20_24dk6")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.640991, -13.108467, 16, 4.4723015, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8.173515, -10.332556, 16, -6.631342, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "water"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ip5v"]
+texture = ExtResource("21_mryly")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 9.407253, 16, 9.715691, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -6.9397774, 16, -6.9397774, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "water"
+0:0/0/custom_data_1 = 10.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q5dlx"]
+texture = ExtResource("22_kq1c5")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 5.0891724, 11.257862, -12.800034, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -5.397602, 6.9397774, -8.481949, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "water"
+0:0/0/custom_data_1 = 10.0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebxd8"]
 texture = ExtResource("15_2nhjh")
 texture_region_size = Vector2i(32, 32)
@@ -125,6 +238,19 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -4.4723015, 16, -4.4723015, 16, 16, -16, 16)
 0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -6.3229065, 16, -6.3229065, 16, 16, -16, 16)
 0:0/0/custom_data_0 = "green"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mryly"]
+texture = ExtResource("20_1fr6y")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.640991, -8.481949, 16, -6.631342, 16, 16, -16, 16)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-10.024122, -7.86508, 16, -7.248211, 16, 16, -16, 16)
+0:0/0/custom_data_0 = "green"
+0:0/0/custom_data_1 = 10.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7vxoj"]
 texture = ExtResource("12_ta5nu")
@@ -375,6 +501,15 @@ sources/10 = SubResource("TileSetAtlasSource_2nhjh")
 sources/0 = SubResource("TileSetAtlasSource_gt76g")
 sources/1 = SubResource("TileSetAtlasSource_2hxjc")
 sources/2 = SubResource("TileSetAtlasSource_ebxd8")
+sources/5 = SubResource("TileSetAtlasSource_mryly")
+sources/11 = SubResource("TileSetAtlasSource_2u7jv")
+sources/12 = SubResource("TileSetAtlasSource_24dk6")
+sources/13 = SubResource("TileSetAtlasSource_kq1c5")
+sources/14 = SubResource("TileSetAtlasSource_ornx7")
+sources/15 = SubResource("TileSetAtlasSource_cnnru")
+sources/16 = SubResource("TileSetAtlasSource_540hr")
+sources/17 = SubResource("TileSetAtlasSource_6ip5v")
+sources/18 = SubResource("TileSetAtlasSource_q5dlx")
 
 [node name="Game" type="Node2D" unique_id=509376788]
 
@@ -460,7 +595,7 @@ position = Vector2(-251, 35)
 
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=656246726]
 position = Vector2(-2, -1)
-tile_map_data = PackedByteArray("AAD8/wgABAAAAAAAAAD9/wgABAAAAAAAAAAAAAgABgAAAAAAAAABAAgABgAAAAAAAAD5/wgABwAAAAAAAADv/wgACAAFAAUAAADw/wgACAAFAAUAAADx/wgACAAFAAUAAADy/wgACAAFAAUAAADz/wgACAAFAAUAAAD0/wgACAAFAAUAAAD6/wgACAAFAAUAAAD7/wgACAAFAAUAAAD+/wgACAAFAAUAAAD//wgACAAFAAUAAAACAAgACAAFAAUAAAADAAgACAAFAAUAAAAEAAgACAAFAAUAAAAFAAgACAAFAAUAAAAGAAgACAAFAAUAAAAHAAgACAAFAAUAAAAAAAYACAAFAAUAAAABAAYACAAFAAUAAAD6/wYACAAFAAUAAAD7/wYACAAFAAUAAAD8/wYACAAFAAUAAAD2/wgAAwAAAAAAAAD+/wYAAwAAAAAAAAD1/wgACQAAAAAAAAD9/wYACQAAAAAAAAD3/wgACgAAAAAAAAD//wYACgAAAAAAAAD4/wgACAAFAAUAAAA=")
+tile_map_data = PackedByteArray("AADv/wgACAAFAAUAAADw/wgACAAFAAUAAADx/wgACAAFAAUAAADy/wgACAAFAAUAAADz/wgACAAFAAUAAAD0/wgACAAFAAUAAAADAAgACAAFAAUAAAAEAAgACAAFAAUAAAAFAAgACAAFAAUAAAAGAAgACAAFAAUAAAAHAAgACAAFAAUAAAD5/wUACAAFAAUAAAD6/wUACAAFAAUAAAD7/wUACAAFAAUAAAD//wUACAAFAAUAAAAAAAUACAAFAAUAAAD//wgACAAFAAUAAAACAAcACAAFAAUAAAABAAYACAAFAAUAAAD5/wgABQAAAAAAAAD6/wgACwAAAAAAAAD7/wgADAAAAAAAAAD8/wgACAAFAAUAAAD4/wgACAAFAAUAAAD8/wUADQAAAAAAAAD9/wUADgAAAAAAAAD+/wUADwAAAAAAAAD1/wgAEAAAAAAAAAD2/wgAEQAAAAAAAAD3/wgAEgAAAAAAAAA=")
 tile_set = SubResource("TileSet_2nhjh")
 
 [node name="WinManager" type="Node2D" parent="." unique_id=335660946]
