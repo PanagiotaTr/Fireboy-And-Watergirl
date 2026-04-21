@@ -1,6 +1,6 @@
 extends AnimatableBody2D
 
-@export var move_offset: Vector2 = Vector2(64, 0)
+@export var move_offset: Vector2 = Vector2(64,0)
 @export var move_duration: float = 1.0
 
 var start_position: Vector2
