@@ -15,7 +15,7 @@ region_enabled = true
 region_rect = Rect2(19.80959, 38.69857, 60.403347, 23.597626)
 
 [node name="TriggerArea" type="Area2D" parent="." unique_id=828474837]
-collision_mask = 6
+collision_mask = 14
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=8212905]
 position = Vector2(-0.5, 2.5)

@@ -328,6 +328,7 @@ height = 278.0
 [node name="Watergirl" type="CharacterBody2D" unique_id=1759271356 groups=["player", "watergirl"]]
 scale = Vector2(0.15, 0.15)
 collision_layer = 2
+collision_mask = 9
 script = ExtResource("1_e2aqf")
 
 [node name="Body" type="AnimatedSprite2D" parent="." unique_id=81288338]
