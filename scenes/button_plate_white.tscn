@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b3uwh8w4g6tgc"]
+
+[ext_resource type="Script" uid="uid://vtep43todom6" path="res://scripts/button_plate.gd" id="1_fc5tg"]
+[ext_resource type="Texture2D" uid="uid://2aad42ju8h1v" path="res://assets/images/buttons/whit-button.png" id="2_fc5tg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3syjn"]
+size = Vector2(43, 15)
+
+[node name="ButtonPlate" type="Node2D" unique_id=1618439526]
+script = ExtResource("1_fc5tg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=550470938]
+texture = ExtResource("2_fc5tg")
+region_enabled = true
+region_rect = Rect2(-0.37267303, 15.805679, 57.671703, 20.239502)
+
+[node name="TriggerArea" type="Area2D" parent="." unique_id=828474837]
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=8212905]
+position = Vector2(0.5, 2.5)
+shape = SubResource("RectangleShape2D_3syjn")
