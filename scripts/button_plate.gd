@@ -18,8 +18,8 @@ func _ready() -> void:
 	trigger_area.body_entered.connect(_on_body_entered)
 	trigger_area.body_exited.connect(_on_body_exited)
 
-func _on_body_entered(body: Node) -> void:
-	if not body.is_in_group("player"):
+func _on_body_entered(body: Node2D) -> void:
+	if not body.is_in_group("player") and not body.is_in_group("box"):
 		return
 
 	body_count += 1
@@ -29,8 +29,8 @@ func _on_body_entered(body: Node) -> void:
 		animate_button(start_y + press_depth)
 		toggled.emit(true)
 
-func _on_body_exited(body: Node) -> void:
-	if not body.is_in_group("player"):
+func _on_body_exited(body: Node2D) -> void:
+	if not body.is_in_group("player") and not body.is_in_group("box"):
 		return
 
 	body_count = max(body_count - 1, 0)

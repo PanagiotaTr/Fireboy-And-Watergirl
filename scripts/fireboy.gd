@@ -110,4 +110,14 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+	for i in range(get_slide_collision_count()):
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+
+		if collider is RigidBody2D:
+			if abs(collision.get_normal().x) > 0.7 and direction != 0:
+				collider.linear_velocity.x = direction * 120.0
+				
 	check_tile()
+	
