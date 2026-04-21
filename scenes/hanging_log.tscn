@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cmnhpq1xbx8t6"]
+
+[ext_resource type="Script" uid="uid://b4waw0gtjqnwj" path="res://scripts/hanging_log.gd" id="1_48l57"]
+[ext_resource type="Texture2D" uid="uid://cv25xc61bpl84" path="res://assets/images/hanging log/Anchor.png" id="2_7th2q"]
+[ext_resource type="Texture2D" uid="uid://er326b0s6ccn" path="res://assets/images/hanging log/chain.png" id="3_krak7"]
+[ext_resource type="Script" uid="uid://dwkjph734f4oy" path="res://scripts/stand_area.gd" id="4_krak7"]
+[ext_resource type="Texture2D" uid="uid://j4puf273dr2u" path="res://assets/images/hanging log/log.png" id="4_sri5s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krak7"]
+size = Vector2(112, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wl28d"]
+size = Vector2(144, 78)
+
+[node name="HangingLog" type="Node2D" unique_id=767700292]
+script = ExtResource("1_48l57")
+
+[node name="ChainVisual" type="Sprite2D" parent="." unique_id=164048485]
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("3_krak7")
+region_enabled = true
+region_rect = Rect2(93.1537, 22.39635, 14.483231, 158.16956)
+
+[node name="TopPart" type="Sprite2D" parent="." unique_id=27166904]
+position = Vector2(0, -88)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("2_7th2q")
+region_enabled = true
+region_rect = Rect2(36.658493, 35.375275, 27.710556, 29.763191)
+
+[node name="LogPivot" type="StaticBody2D" parent="." unique_id=224182340]
+position = Vector2(0, -22.000002)
+scale = Vector2(1.3, 1.3)
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="LogPivot" unique_id=989359552]
+position = Vector2(0, 88)
+texture = ExtResource("4_sri5s")
+region_enabled = true
+region_rect = Rect2(42.322746, 85.684296, 115.77866, 26.684235)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LogPivot" unique_id=878708962]
+position = Vector2(0, 87)
+shape = SubResource("RectangleShape2D_krak7")
+
+[node name="StandArea" type="Area2D" parent="." unique_id=2062634788]
+collision_mask = 4
+script = ExtResource("4_krak7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StandArea" unique_id=1386659025]
+position = Vector2(0, 38)
+shape = SubResource("RectangleShape2D_wl28d")
