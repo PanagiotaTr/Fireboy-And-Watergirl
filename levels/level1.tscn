@@ -1790,7 +1790,7 @@ offset_bottom = 246.0
 theme_override_constants/outline_size = 6
 theme_override_font_sizes/normal_font_size = 19
 bbcode_enabled = true
-text = "[center][color=#f2c94c]USE [/color][color=#1e88e5]A,W,D[/color][color=#f2c94c] OR [/color][color=#1e88e5]F,T,H[/color][color=#f2c94c] TO[/color]
+text = "[center][color=#f2c94c]USE [/color][color=#1e88e5]A,W,D[/color][color=#f2c94c] TO[/color]
 [color=#f2c94c]MOVE WATERGIRL...[/color][/center]"
 
 [node name="LevelsText" type="RichTextLabel" parent="." unique_id=2024447571]
