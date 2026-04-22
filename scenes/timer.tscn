@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c6y471g37hli2"]
+
+[ext_resource type="Texture2D" uid="uid://d060toqcl6564" path="res://assets/images/timer.png" id="1_5lxq6"]
+[ext_resource type="Script" uid="uid://b8ubeaq3wturh" path="res://scripts/timer.gd" id="2_g5y8c"]
+
+[sub_resource type="Theme" id="Theme_5lxq6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bi5oq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5lxq6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5y8c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5lxq6"]
+font_size = 22
+
+[node name="Timer" type="Node2D" unique_id=852601352]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=703209058]
+texture = ExtResource("1_5lxq6")
+
+[node name="Panel" type="Panel" parent="." unique_id=426116210]
+offset_left = -60.0
+offset_top = -39.0
+offset_right = 77.0
+offset_bottom = 1.0
+theme = SubResource("Theme_5lxq6")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bi5oq")
+script = ExtResource("2_g5y8c")
+
+[node name="MinutesText" type="Label" parent="Panel" unique_id=1047407771]
+layout_mode = 0
+offset_left = 27.0
+offset_right = 57.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5lxq6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g5y8c")
+text = "10"
+label_settings = SubResource("LabelSettings_5lxq6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Panel" unique_id=422861611]
+layout_mode = 0
+offset_left = 55.0
+offset_top = -2.0
+offset_right = 65.0
+offset_bottom = 37.0
+text = ":"
+label_settings = SubResource("LabelSettings_5lxq6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SecondsText" type="Label" parent="Panel" unique_id=306288866]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 94.0
+offset_bottom = 39.0
+text = "05"
+label_settings = SubResource("LabelSettings_5lxq6")
+horizontal_alignment = 1
+vertical_alignment = 1
