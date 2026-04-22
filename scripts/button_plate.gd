@@ -19,7 +19,7 @@ func _ready() -> void:
 	trigger_area.body_exited.connect(_on_body_exited)
 
 func _on_body_entered(body: Node2D) -> void:
-	if not body.is_in_group("player") and not body.is_in_group("box"):
+	if not body.is_in_group("player") and not body.is_in_group("box") and not body.is_in_group("rock"):
 		return
 
 	body_count += 1

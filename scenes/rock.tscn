@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bujrqseubcdl8"]
+
+[ext_resource type="Texture2D" uid="uid://bjomst4qi73bg" path="res://assets/images/rock.png" id="1_1di36"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1di36"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mek2u"]
+radius = 6.0
+
+[node name="Rock" type="RigidBody2D" unique_id=1624946689 groups=["rock"]]
+collision_mask = 7
+mass = 100.0
+physics_material_override = SubResource("PhysicsMaterial_1di36")
+gravity_scale = 1.2
+linear_damp = 0.5
+angular_damp = 0.5
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=563575703]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_1di36")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1479432421]
+shape = SubResource("CircleShape2D_mek2u")

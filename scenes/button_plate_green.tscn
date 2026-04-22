@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bi6knr37tho4"]
+
+[ext_resource type="Script" uid="uid://cvp00bj2wds0x" path="res://scripts/button_plate.gd" id="1_3tf54"]
+[ext_resource type="Texture2D" uid="uid://1heclcj0n8fx" path="res://assets/images/buttons/button-green.png" id="2_3tf54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3syjn"]
+size = Vector2(39, 10)
+
+[node name="ButtonPlate" type="Node2D" unique_id=1618439526]
+script = ExtResource("1_3tf54")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=550470938]
+texture = ExtResource("2_3tf54")
+region_enabled = true
+region_rect = Rect2(-0.042179108, 3.7790427, 46.14798, 16.32893)
+
+[node name="TriggerArea" type="Area2D" parent="." unique_id=828474837]
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=8212905]
+position = Vector2(-0.5, 3)
+shape = SubResource("RectangleShape2D_3syjn")
