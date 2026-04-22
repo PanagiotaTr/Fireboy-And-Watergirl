@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://by0hjnb16cw22"]
+
+[ext_resource type="Texture2D" uid="uid://4diuwt36stq5" path="res://assets/sprites/Shadox.png" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://dyngteyn1nsur" path="res://scripts/enemy.gd" id="1_md0e3"]
+[ext_resource type="AudioStream" uid="uid://cfr04t8t8ylv8" path="res://assets/sounds/enemy_death.mp3" id="3_4ra3w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(160, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(192, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(224, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(256, 196, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
+atlas = ExtResource("1_7p1mj")
+region = Rect2(288, 196, 32, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nenq2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md0e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ra3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uy6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4w8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwavj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_md0e3"]
+radius = 79.0
+height = 278.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
+size = Vector2(21, 23)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=365564668]
+collision_layer = 16
+script = ExtResource("1_md0e3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1961576087]
+sprite_frames = SubResource("SpriteFrames_nenq2")
+autoplay = "default"
+frame_progress = 0.3693194
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=864768727]
+position = Vector2(-1.0000038, 2)
+scale = Vector2(0.08, 0.08)
+shape = SubResource("CapsuleShape2D_md0e3")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=438255862]
+collision_mask = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=2092274787]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_4ra3w")
+
+[node name="RayLeft" type="RayCast2D" parent="." unique_id=17406766]
+target_position = Vector2(-12, 20)
+
+[node name="RayRight" type="RayCast2D" parent="." unique_id=1359518257]
+target_position = Vector2(12, 20)
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=271256623]
+stream = ExtResource("3_4ra3w")
+bus = &"SFX"
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

@@ -32,9 +32,6 @@ func check_tile():
 	var cell = tilemap.local_to_map(local_pos)
 	var tile_data = tilemap.get_cell_tile_data(cell)
 
-	print("feet_pos: ", feet_pos)
-	print("cell: ", cell)
-
 	if tile_data == null:
 		print("NO TILE DATA")
 		return
@@ -42,8 +39,6 @@ func check_tile():
 	var tile_type = tile_data.get_custom_data("type")
 	var kill_height = tile_data.get_custom_data("kill_height")
 
-	print("tile_type: ", tile_type)
-	print("kill_height: ", kill_height)
 
 	if tile_type == null or kill_height == null:
 		print("MISSING CUSTOM DATA")
@@ -51,8 +46,6 @@ func check_tile():
 
 	var tile_origin = tilemap.map_to_local(cell)
 	var y_in_tile = local_pos.y - tile_origin.y
-
-	print("y_in_tile: ", y_in_tile)
 
 	if tile_type in ["water", "green", "purple"] and y_in_tile >= 0 and y_in_tile <= kill_height:
 		print("DIE")
