@@ -31,7 +31,6 @@
 [ext_resource type="PackedScene" uid="uid://3ax06fq7susm" path="res://scenes/moving_platform.tscn" id="28_e6f57"]
 [ext_resource type="PackedScene" uid="uid://80wx2m681its" path="res://scenes/air_vent.tscn" id="30_lgkev"]
 [ext_resource type="PackedScene" uid="uid://b7iwxx0ypfjd5" path="res://scenes/push_box.tscn" id="31_lkdl6"]
-[ext_resource type="PackedScene" uid="uid://blfqoke1amq6l" path="res://scenes/ramp_unit.tscn" id="32_e6f57"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2q4nn"]
 texture = ExtResource("1_i4ys8")
@@ -1789,6 +1788,3 @@ position = Vector2(-494, 216)
 
 [node name="PushBox" parent="." unique_id=1642231496 instance=ExtResource("31_lkdl6")]
 position = Vector2(418, -176)
-
-[node name="RampUnit" parent="." unique_id=908579073 instance=ExtResource("32_e6f57")]
-position = Vector2(179, -45)
