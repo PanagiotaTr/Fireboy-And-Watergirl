@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://bl0ogg836wj1c"]
+
+[ext_resource type="Texture2D" uid="uid://bggsic1er51se" path="res://assets/sprites/liquids-new/lava-green.png" id="1_vou75"]
+[ext_resource type="Texture2D" uid="uid://dae8uy6gvduxi" path="res://assets/sprites/liquids-new/green-green.png" id="2_woh22"]
+[ext_resource type="Texture2D" uid="uid://kwbmgkwqd8qq" path="res://assets/sprites/liquids-new/water-green.png" id="3_qlspg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ctev"]
+texture = ExtResource("1_vou75")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:2/animation_columns = 3
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/animation_frame_2/duration = 1.0
+0:2/0 = 0
+0:4/animation_columns = 3
+0:4/animation_frame_0/duration = 1.0
+0:4/animation_frame_1/duration = 1.0
+0:4/animation_frame_2/duration = 1.0
+0:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kwp3y"]
+texture = ExtResource("2_woh22")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:2/animation_columns = 3
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/animation_frame_2/duration = 1.0
+0:2/0 = 0
+0:4/animation_columns = 3
+0:4/animation_frame_0/duration = 1.0
+0:4/animation_frame_1/duration = 1.0
+0:4/animation_frame_2/duration = 1.0
+0:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o4tyw"]
+texture = ExtResource("3_qlspg")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:2/animation_columns = 3
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/animation_frame_2/duration = 1.0
+0:2/0 = 0
+0:4/animation_columns = 3
+0:4/animation_frame_0/duration = 1.0
+0:4/animation_frame_1/duration = 1.0
+0:4/animation_frame_2/duration = 1.0
+0:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_cqdpy"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 2
+physics_layer_1/collision_layer = 1
+physics_layer_1/collision_mask = 4
+sources/0 = SubResource("TileSetAtlasSource_7ctev")
+sources/1 = SubResource("TileSetAtlasSource_kwp3y")
+sources/2 = SubResource("TileSetAtlasSource_o4tyw")
+
+[node name="Liquids" type="TileMapLayer" unique_id=1863127853]
+tile_set = SubResource("TileSet_cqdpy")
