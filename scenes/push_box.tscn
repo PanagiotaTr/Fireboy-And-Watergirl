@@ -11,6 +11,7 @@ size = Vector2(28, 28)
 collision_layer = 8
 collision_mask = 23
 physics_material_override = SubResource("PhysicsMaterial_y7y60")
+can_sleep = false
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=507057776]
 texture = ExtResource("1_y7y60")

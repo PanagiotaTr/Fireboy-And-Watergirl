@@ -5,6 +5,7 @@ extends CharacterBody2D
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var death_sound: AudioStreamPlayer2D = $DeathSound
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
+@onready var hitbox: Area2D = $Hitbox
 
 const SPEED = 60.0
 var direction := -1
@@ -17,8 +18,10 @@ func die():
 	
 	is_dead = true
 	set_physics_process(false)
-	collision_shape_2d.disabled = true
-	$Hitbox.monitoring = false
+
+	collision_shape_2d.set_deferred("disabled", true)
+	hitbox.set_deferred("monitoring", false)
+	hitbox.set_deferred("monitorable", false)
 	
 	sprite.visible = false
 	death_sound.play()
@@ -49,7 +52,10 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_hitbox_body_entered(body: Node) -> void:
-
 	if body is RigidBody2D:
 		die()
-			
+		return
+	
+	if body.name == "Fireboy" or body.name == "Watergirl":
+		if body.has_method("die"):
+			body.die()

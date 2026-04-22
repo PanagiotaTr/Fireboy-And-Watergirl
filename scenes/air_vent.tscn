@@ -127,6 +127,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dnnn3"]
 size = Vector2(62.50004, 217.00015)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1av5m"]
+size = Vector2(82.50006, 18.750004)
+
 [node name="AirVent" type="Node2D" unique_id=653155705]
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_7aqtu")
@@ -165,3 +168,10 @@ collision_mask = 6
 position = Vector2(1.4901159e-06, -101.49994)
 scale = Vector2(0.9999992, 0.9999992)
 shape = SubResource("RectangleShape2D_dnnn3")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=866765178]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1078131215]
+position = Vector2(-3.7625425e-06, -8.124999)
+scale = Vector2(0.99999917, 0.99999917)
+shape = SubResource("RectangleShape2D_1av5m")

@@ -18,7 +18,7 @@ func die():
 	is_dead = true
 	set_physics_process(false)
 	visible = false
-	collision_shape_2d_2.disabled = true
+	collision_shape_2d_2.set_deferred("disabled", true)
 	
 	death_sound.play()
 	await death_sound.finished
