@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://behcrf50s3yd1"]
+
+[ext_resource type="AudioStream" uid="uid://bxoxwp58fhmbh" path="res://assets/music/music-speed up.mp3" id="1_2rlgu"]
+
+[node name="Music" type="AudioStreamPlayer2D" unique_id=1372747149]
+scale = Vector2(0.15, 0.15)
+stream = ExtResource("1_2rlgu")
+autoplay = true
+bus = &"Music"

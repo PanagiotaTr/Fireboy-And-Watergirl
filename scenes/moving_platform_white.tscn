@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cmupbgpu5nrva"]
 
-[ext_resource type="Script" uid="uid://c2vyab6dwkwo0" path="res://scripts/moving_platform.gd" id="1_4elc1"]
+[ext_resource type="Script" uid="uid://bop1xc0ifrnc2" path="res://scripts/moving_platform.gd" id="1_4elc1"]
 [ext_resource type="Texture2D" uid="uid://cvp8ku2m5am40" path="res://assets/images/platforms/white platform.png" id="2_4elc1"]
 [ext_resource type="AudioStream" uid="uid://kb5kkxxhsqgr" path="res://assets/sounds/Platform Moving.mp3" id="3_ajulo"]
 

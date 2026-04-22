@@ -198,6 +198,7 @@ _data = {
 }
 
 [node name="Green_Coin" type="Area2D" unique_id=162450931]
+scale = Vector2(1.2, 1.2)
 collision_mask = 6
 script = ExtResource("1_gdpmg")
 

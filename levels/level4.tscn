@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="30_ovr0t"]
 [ext_resource type="Texture2D" uid="uid://cbd4cdgbfkoqb" path="res://assets/sprites/terrain/Terrain (32x32).png" id="31_0lw7l"]
 [ext_resource type="Texture2D" uid="uid://b4f4ue6djh4de" path="res://assets/sprites/liquids/lava1.png" id="32_qe4si"]
-[ext_resource type="AudioStream" uid="uid://bycrqsaqfn123" path="res://assets/sounds/LevelMusic.mp3" id="38_kix41"]
+[ext_resource type="AudioStream" uid="uid://bycrqsaqfn123" path="res://assets/music/LevelMusic.mp3" id="38_kix41"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyx7s"]
 texture = ExtResource("2_nxwod")

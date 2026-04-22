@@ -198,6 +198,7 @@ _data = {
 }
 
 [node name="Red_Coin" type="Area2D" unique_id=1200659554]
+scale = Vector2(1.2, 1.2)
 collision_mask = 4
 script = ExtResource("1_i64fm")
 

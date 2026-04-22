@@ -3,7 +3,8 @@ extends Node2D
 @onready var green_text = $GreenLiquidText
 @onready var fire_text = $FireboyText
 @onready var water_text = $WatergirlText
-@onready var trigger = $MessageTrigger
+@onready var message_trigger: Area2D = $MessageTrigger
+
 @onready var liquids_text: RichTextLabel = $LiquidsText
 @onready var levels_text: RichTextLabel = $LevelsText
 @onready var levers_1_text: RichTextLabel = $Levers1Text
@@ -34,12 +35,6 @@ func _ready() -> void:
 	enemy_text.visible = false
 	doors_text.visible = false
 
-	trigger.body_entered.connect(_on_message_trigger_body_entered)
-	message_trigger_1.body_entered.connect(_on_message_trigger_1_body_entered)
-	message_trigger_2.body_entered.connect(_on_message_trigger_2_body_entered)
-	message_trigger_3.body_entered.connect(_on_message_trigger_3_body_entered)
-	message_trigger_4.body_entered.connect(_on_message_trigger_4_body_entered)
-	message_trigger_5.body_entered.connect(_on_message_trigger_5_body_entered)
 
 func _on_message_trigger_body_entered(body: Node2D) -> void:
 	if shown_2:

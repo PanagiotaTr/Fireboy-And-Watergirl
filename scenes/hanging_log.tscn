@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cmnhpq1xbx8t6"]
 
-[ext_resource type="Script" uid="uid://b4waw0gtjqnwj" path="res://scripts/hanging_log.gd" id="1_48l57"]
+[ext_resource type="Script" uid="uid://syc6kghi68q8" path="res://scripts/hanging_log.gd" id="1_48l57"]
 [ext_resource type="Texture2D" uid="uid://cv25xc61bpl84" path="res://assets/images/hanging log/Anchor.png" id="2_7th2q"]
 [ext_resource type="Texture2D" uid="uid://er326b0s6ccn" path="res://assets/images/hanging log/chain.png" id="3_krak7"]
-[ext_resource type="Script" uid="uid://dwkjph734f4oy" path="res://scripts/stand_area.gd" id="4_krak7"]
+[ext_resource type="Script" uid="uid://dns1vie0ota4p" path="res://scripts/stand_area.gd" id="4_krak7"]
 [ext_resource type="Texture2D" uid="uid://j4puf273dr2u" path="res://assets/images/hanging log/log.png" id="4_sri5s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_krak7"]

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://5nh2k0ewbvkp"]
+
+[ext_resource type="AudioStream" uid="uid://p44dyhqgwnbj" path="res://assets/music/LevelMusic.mp3" id="1_ocros"]
+
+[node name="Music" type="AudioStreamPlayer" unique_id=523430806]
+stream = ExtResource("1_ocros")
+volume_db = -15.0
+autoplay = true
+bus = &"Music"
