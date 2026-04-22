@@ -9,6 +9,8 @@ const JUMP_VELOCITY = -350.0
 @onready var death_sound: AudioStreamPlayer2D = $DeathSound
 @onready var collision_shape_2d_2: CollisionShape2D = $CollisionShape2D2
 
+const DEATH_EFFECT = preload("res://scenes/death_effect.tscn")
+
 var is_dead := false
 
 func die():
@@ -19,6 +21,10 @@ func die():
 	set_physics_process(false)
 	visible = false
 	collision_shape_2d_2.set_deferred("disabled", true)
+	
+	var effect = DEATH_EFFECT.instantiate()
+	effect.global_position = global_position
+	get_parent().add_child(effect)
 	
 	death_sound.play()
 	await death_sound.finished
