@@ -323,9 +323,8 @@ frame_progress = 0.006093183
 [node name="Head" type="AnimatedSprite2D" parent="." unique_id=1743020227]
 position = Vector2(66, -245)
 sprite_frames = SubResource("SpriteFrames_bs4nq")
-animation = &"fall_run"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.16208827
 offset = Vector2(-70, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=716025137]
