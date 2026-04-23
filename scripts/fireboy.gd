@@ -39,7 +39,6 @@ func check_tile():
 	var tile_data = tilemap.get_cell_tile_data(cell)
 
 	if tile_data == null:
-		print("NO TILE DATA")
 		return
 
 	var tile_type = tile_data.get_custom_data("type")
