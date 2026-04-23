@@ -1738,8 +1738,8 @@ sources/19 = SubResource("TileSetAtlasSource_edo0i")
 shader = ExtResource("34_lkdl6")
 shader_parameter/light_pos_1 = Vector2(300, 200)
 shader_parameter/light_pos_2 = Vector2(500, 200)
-shader_parameter/radius = 70.0
-shader_parameter/softness = 40.0
+shader_parameter/radius = 120.0
+shader_parameter/softness = 80.0
 
 [node name="Level6" type="Node2D" unique_id=735656306]
 position = Vector2(-595, -390)
