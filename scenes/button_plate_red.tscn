@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b4yecgi4kx0a6"]
+
+[ext_resource type="Script" uid="uid://cvp00bj2wds0x" path="res://scripts/button_plate.gd" id="1_yorih"]
+[ext_resource type="Texture2D" uid="uid://dm1kjxli7th10" path="res://assets/images/buttons/red button.png" id="2_yorih"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yorih"]
+size = Vector2(40, 6.3333335)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3syjn"]
+size = Vector2(16.666666, 15)
+
+[node name="ButtonPlate" type="Node2D" unique_id=1618439526]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_yorih")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=550470938]
+texture = ExtResource("2_yorih")
+region_enabled = true
+region_rect = Rect2(1.8444853, 15.625535, 46.23189, 15.522504)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=123038660]
+collision_mask = 14
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1079854217]
+position = Vector2(0, 4.8333335)
+shape = SubResource("RectangleShape2D_yorih")
+
+[node name="TriggerArea" type="Area2D" parent="." unique_id=828474837]
+collision_mask = 14
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=8212905]
+position = Vector2(-1.6666666, 0.5)
+shape = SubResource("RectangleShape2D_3syjn")

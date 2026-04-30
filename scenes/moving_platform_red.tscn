@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://7b5qvjqiwm4l"]
+
+[ext_resource type="Script" uid="uid://c2vyab6dwkwo0" path="res://scripts/moving_platform.gd" id="1_2bnua"]
+[ext_resource type="Texture2D" uid="uid://br7lcofd5bqgf" path="res://assets/images/platforms/red platform.png" id="2_2bnua"]
+[ext_resource type="AudioStream" uid="uid://kb5kkxxhsqgr" path="res://assets/sounds/Platform Moving.mp3" id="3_5oux8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afg43"]
+size = Vector2(146.66666, 28.333332)
+
+[node name="MovingPlatform" type="AnimatableBody2D" unique_id=350428035]
+scale = Vector2(0.6, 0.6)
+collision_mask = 6
+script = ExtResource("1_2bnua")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=19150281]
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("2_2bnua")
+region_enabled = true
+region_rect = Rect2(2.2875214, 5.530081, 137.17162, 37.345146)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=659057503]
+position = Vector2(-3.4769375e-06, -2.5000002)
+shape = SubResource("RectangleShape2D_afg43")
+
+[node name="MoveSound" type="AudioStreamPlayer2D" parent="." unique_id=1810433766]
+stream = ExtResource("3_5oux8")
+pitch_scale = 0.5
+bus = &"SFX"
