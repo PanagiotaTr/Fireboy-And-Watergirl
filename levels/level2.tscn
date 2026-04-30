@@ -1,33 +1,33 @@
 [gd_scene format=4 uid="uid://cws7ph54mba53"]
 
 [ext_resource type="Texture2D" uid="uid://bshqdr6elwpri" path="res://assets/sprites/terrain/Terrain_background.png" id="1_hc5lr"]
-[ext_resource type="Texture2D" uid="uid://ct03hylchgif7" path="res://assets/sprites/terrain/green_colors.png" id="2_gkpyy"]
+[ext_resource type="Texture2D" uid="uid://c31sdaevujnu5" path="res://assets/sprites/terrain/green_colors.png" id="2_gkpyy"]
 [ext_resource type="PackedScene" uid="uid://cmupbgpu5nrva" path="res://scenes/moving_platform_white.tscn" id="4_vuw6k"]
 [ext_resource type="PackedScene" uid="uid://c613x4guqbbfi" path="res://scenes/fireboy.tscn" id="5_dk5bc"]
 [ext_resource type="PackedScene" uid="uid://bp21gobbmx54k" path="res://scenes/watergirl.tscn" id="6_hieke"]
 [ext_resource type="PackedScene" uid="uid://dji3fkrcra8kn" path="res://scenes/blue_coin.tscn" id="7_ajfb1"]
 [ext_resource type="PackedScene" uid="uid://ckv8vp7v2rde" path="res://scenes/red_coin.tscn" id="8_4fnjq"]
-[ext_resource type="Texture2D" uid="uid://do12cqduekajo" path="res://assets/sprites/liquids/lava3.png" id="14_p4qdk"]
-[ext_resource type="Texture2D" uid="uid://spuekmirhah8" path="res://assets/sprites/liquids/green2.png" id="15_0t2hm"]
-[ext_resource type="Texture2D" uid="uid://crkjrhghvd6sn" path="res://assets/sprites/liquids/green3.png" id="16_80amq"]
+[ext_resource type="Texture2D" uid="uid://j0k5av2286xe" path="res://assets/sprites/liquids/lava3.png" id="14_p4qdk"]
+[ext_resource type="Texture2D" uid="uid://db6xyeo06mstl" path="res://assets/sprites/liquids/green2.png" id="15_0t2hm"]
+[ext_resource type="Texture2D" uid="uid://3t1iwc7u26q0" path="res://assets/sprites/liquids/green3.png" id="16_80amq"]
 [ext_resource type="Texture2D" uid="uid://lj31h7h6d6qu" path="res://assets/sprites/liquids/purple1.png" id="17_ohnh8"]
 [ext_resource type="Texture2D" uid="uid://d2el0nuoed8g2" path="res://assets/sprites/liquids/purple2.png" id="18_3ex1y"]
 [ext_resource type="Texture2D" uid="uid://buhob5a4fnq1l" path="res://assets/sprites/liquids/purple3.png" id="19_v603g"]
-[ext_resource type="Texture2D" uid="uid://cvutu26473ggy" path="res://assets/sprites/liquids/water1.png" id="20_clcql"]
+[ext_resource type="Texture2D" uid="uid://bmmo08ny7kl88" path="res://assets/sprites/liquids/water1.png" id="20_clcql"]
 [ext_resource type="Texture2D" uid="uid://cx4w6g4mdo26c" path="res://assets/sprites/terrain/Terrain2.png" id="21_gkpyy"]
-[ext_resource type="Texture2D" uid="uid://w5xfam1gvhth" path="res://assets/sprites/liquids/water2.png" id="21_kwpar"]
-[ext_resource type="Texture2D" uid="uid://bujov638kxy8p" path="res://assets/sprites/liquids/water3.png" id="22_noeah"]
-[ext_resource type="Texture2D" uid="uid://diddxmcc6sx0r" path="res://assets/sprites/liquids/lava2.png" id="24_hde2x"]
+[ext_resource type="Texture2D" uid="uid://daplo47ii8wy1" path="res://assets/sprites/liquids/water2.png" id="21_kwpar"]
+[ext_resource type="Texture2D" uid="uid://ngpugtdeyu4g" path="res://assets/sprites/liquids/water3.png" id="22_noeah"]
+[ext_resource type="Texture2D" uid="uid://ng75whqbxb2r" path="res://assets/sprites/liquids/lava2.png" id="24_hde2x"]
 [ext_resource type="Texture2D" uid="uid://bakd2fn3sgehr" path="res://assets/sprites/liquids/green.png" id="25_5r8ue"]
-[ext_resource type="Texture2D" uid="uid://kecjwtu1f7h7" path="res://assets/sprites/liquids/green1.png" id="26_adcor"]
+[ext_resource type="Texture2D" uid="uid://cik80uclmf0o5" path="res://assets/sprites/liquids/green1.png" id="26_adcor"]
 [ext_resource type="PackedScene" uid="uid://b3uwh8w4g6tgc" path="res://scenes/button_plate_white.tscn" id="26_erhed"]
 [ext_resource type="PackedScene" uid="uid://3ax06fq7susm" path="res://scenes/moving_platform.tscn" id="27_7a6c5"]
 [ext_resource type="Texture2D" uid="uid://bmjcu0a4vgnh" path="res://assets/sprites/liquids/purple.png" id="27_jf7t1"]
 [ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="28_qbqiy"]
 [ext_resource type="PackedScene" uid="uid://b3wy8sb631hp6" path="res://scenes/button_plate.tscn" id="28_vrpbn"]
 [ext_resource type="PackedScene" uid="uid://bjvhkceb6kac2" path="res://scenes/door_watergirl.tscn" id="29_08mxr"]
-[ext_resource type="Texture2D" uid="uid://cbd4cdgbfkoqb" path="res://assets/sprites/terrain/Terrain (32x32).png" id="29_bg3o3"]
-[ext_resource type="Texture2D" uid="uid://b4f4ue6djh4de" path="res://assets/sprites/liquids/lava1.png" id="30_behtn"]
+[ext_resource type="Texture2D" uid="uid://b407py0wmcyt4" path="res://assets/sprites/terrain/Terrain (32x32).png" id="29_bg3o3"]
+[ext_resource type="Texture2D" uid="uid://bwwoysm76usax" path="res://assets/sprites/liquids/lava1.png" id="30_behtn"]
 [ext_resource type="PackedScene" uid="uid://c68hyykf16g3d" path="res://scenes/door_fireboy.tscn" id="30_sxrw6"]
 [ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="31_sxrw6"]
 [ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="32_vko8m"]
@@ -1668,6 +1668,20 @@ tile_set = SubResource("TileSet_k73cj")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(0, 55)
 
+[node name="Doors" type="Node2D" parent="." unique_id=1905756846]
+
+[node name="Door" parent="Doors" unique_id=226259691 instance=ExtResource("29_08mxr")]
+position = Vector2(-388, -186)
+
+[node name="Door2" parent="Doors" unique_id=158057067 instance=ExtResource("30_sxrw6")]
+position = Vector2(-466, -186)
+
+[node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("6_hieke")]
+position = Vector2(-529, 350)
+
+[node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("5_dk5bc")]
+position = Vector2(-492, 350)
+
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=2023583884]
 collision_layer = 2
 
@@ -1686,8 +1700,7 @@ shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="ButtonPlateLeft" parent="ButtonAndPlatformDown" unique_id=1125762716 instance=ExtResource("26_erhed")]
 position = Vector2(-304, 124)
-scale = Vector2(0.5, 0.5)
-press_depth = 15.0
+press_depth = 16.0
 press_duration = 0.5
 
 [node name="MovingPlatformWhite" parent="ButtonAndPlatformDown" unique_id=350428035 instance=ExtResource("4_vuw6k")]
@@ -1698,8 +1711,7 @@ move_duration = 1.3
 
 [node name="ButtonPlateRight" parent="ButtonAndPlatformDown" unique_id=1618439526 instance=ExtResource("26_erhed")]
 position = Vector2(304, 124)
-scale = Vector2(0.5, 0.5)
-press_depth = 15.0
+press_depth = 16.0
 press_duration = 0.5
 
 [node name="ButtonsPlatformsTop" type="Node2D" parent="." unique_id=276921023]
@@ -1716,23 +1728,13 @@ move_offset = Vector2(-97, 0)
 
 [node name="ButtonPlate" parent="ButtonsPlatformsTop" unique_id=1044165141 instance=ExtResource("28_vrpbn")]
 position = Vector2(254, -164)
-scale = Vector2(0.5, 0.5)
-press_depth = 15.0
+press_depth = 16.0
 press_duration = 0.5
 
 [node name="ButtonPlate2" parent="ButtonsPlatformsTop" unique_id=1520525636 instance=ExtResource("28_vrpbn")]
 position = Vector2(-216, -164)
-scale = Vector2(0.5, 0.5)
-press_depth = 15.0
+press_depth = 16.0
 press_duration = 0.5
-
-[node name="Doors" type="Node2D" parent="." unique_id=1905756846]
-
-[node name="Door" parent="Doors" unique_id=226259691 instance=ExtResource("29_08mxr")]
-position = Vector2(-388, -186)
-
-[node name="Door2" parent="Doors" unique_id=158057067 instance=ExtResource("30_sxrw6")]
-position = Vector2(-466, -186)
 
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=656246726]
 position = Vector2(0, -2)
@@ -1807,12 +1809,6 @@ position = Vector2(28, -179)
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("31_sxrw6")]
 position = Vector2(0, -252)
 scale = Vector2(0.5, 0.5)
-
-[node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("6_hieke")]
-position = Vector2(-529, 350)
-
-[node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("5_dk5bc")]
-position = Vector2(-492, 350)
 
 [node name="Music" parent="." unique_id=1372747149 instance=ExtResource("32_vko8m")]
 
