@@ -12,6 +12,7 @@ var start_y: float
 
 @onready var trigger_area: Area2D = $TriggerArea
 @onready var sprite: Sprite2D = $Sprite2D
+@onready var solid_body: StaticBody2D = $StaticBody2D
 
 func _ready() -> void:
 	start_y = sprite.position.y
@@ -30,7 +31,7 @@ func _on_body_entered(body: Node2D) -> void:
 		toggled.emit(true)
 
 func _on_body_exited(body: Node2D) -> void:
-	if not body.is_in_group("player") and not body.is_in_group("box"):
+	if not body.is_in_group("player") and not body.is_in_group("box") and not body.is_in_group("rock"):
 		return
 
 	body_count = max(body_count - 1, 0)
@@ -45,6 +46,9 @@ func animate_button(target_y: float) -> void:
 		tween.kill()
 
 	tween = create_tween()
+	tween.set_parallel(true)
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_IN_OUT)
+
 	tween.tween_property(sprite, "position:y", target_y, press_duration)
+	tween.tween_property(solid_body, "position:y", target_y, press_duration)

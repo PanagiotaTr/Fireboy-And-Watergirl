@@ -3,10 +3,14 @@
 [ext_resource type="Script" uid="uid://cvp00bj2wds0x" path="res://scripts/button_plate.gd" id="1_fc5tg"]
 [ext_resource type="Texture2D" uid="uid://2aad42ju8h1v" path="res://assets/images/buttons/whit-button.png" id="2_fc5tg"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fc5tg"]
+size = Vector2(48, 12)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3syjn"]
-size = Vector2(43, 15)
+size = Vector2(20, 18)
 
 [node name="ButtonPlate" type="Node2D" unique_id=1618439526]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_fc5tg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=550470938]
@@ -14,9 +18,16 @@ texture = ExtResource("2_fc5tg")
 region_enabled = true
 region_rect = Rect2(-0.37267303, 15.805679, 57.671703, 20.239502)
 
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=126820057]
+collision_mask = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=658935735]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_fc5tg")
+
 [node name="TriggerArea" type="Area2D" parent="." unique_id=828474837]
 collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=8212905]
-position = Vector2(0.5, 2.5)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_3syjn")
