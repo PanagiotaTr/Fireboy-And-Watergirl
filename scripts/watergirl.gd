@@ -27,6 +27,12 @@ func die():
 	get_parent().add_child(effect)
 	
 	death_sound.play()
+	
+	await effect.get_node("AnimatedSprite2D").animation_finished
+	
+	var win_manager = get_parent().get_node("WinManager")
+	win_manager.show_lose_panel()
+	
 	await death_sound.finished
 	queue_free()
 

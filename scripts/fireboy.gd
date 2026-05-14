@@ -27,9 +27,15 @@ func die():
 	get_parent().add_child(effect)
 	
 	death_sound.play()
+	
+	await effect.get_node("AnimatedSprite2D").animation_finished
+	
+	var win_manager = get_parent().get_node("WinManager")
+	win_manager.show_lose_panel()
+	
 	await death_sound.finished
 	queue_free()
-	
+
 func check_tile():
 	var tilemap = get_parent().get_node("Blocks")
 
@@ -46,7 +52,6 @@ func check_tile():
 
 
 	if tile_type == null or kill_height == null:
-		print("MISSING CUSTOM DATA")
 		return
 
 	var tile_origin = tilemap.map_to_local(cell)
