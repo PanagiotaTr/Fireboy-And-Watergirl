@@ -23,3 +23,9 @@ func reset_coins() -> void:
 	red_coins = 0
 	blue_coins = 0
 	green_coins = 0
+	
+func are_levels_completed(levels: Array[int]) -> bool:
+	for level in levels:
+		if not completed_levels.has(level):
+			return false
+	return true

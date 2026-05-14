@@ -5,9 +5,12 @@ extends Node
 @export var win_panel: NodePath
 @export var level_id: int = 1
 @onready var button_sound = get_node(win_panel).get_node("ButtonSound")
-@onready var minutes_text: Label = $"../Timer/Panel/MinutesText"
+@onready  var minutes_text: Label = $"../Timer/Panel/MinutesText"
 @onready var seconds_text: Label = $"../Timer/Panel/SecondsText"
 @export var lose_panel: NodePath
+@export var levels_to_unlock: Array[int] = []
+@export var required_completed_levels: Array[int] = []
+@export var branch_unlock_levels: Array[int] = []
 
 var won := false
 
@@ -39,7 +42,10 @@ func _process(_delta: float) -> void:
 		print("WINNERS")
 
 		GameManager.complete_level(level_id)
-		GameManager.unlock_levels([2, 3, 4, 5])
+		GameManager.unlock_levels(levels_to_unlock)
+		
+		if GameManager.are_levels_completed(required_completed_levels):
+			GameManager.unlock_levels(branch_unlock_levels)
 
 		#await get_tree().create_timer(1.0).timeout
 
@@ -76,3 +82,4 @@ func show_lose_panel() -> void:
 func _on_retry_pressed() -> void:
 	get_tree().paused = false
 	get_tree().reload_current_scene()
+	

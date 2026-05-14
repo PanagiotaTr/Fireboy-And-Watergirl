@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://drk61o82smxbv"]
 
 [ext_resource type="Texture2D" uid="uid://bshqdr6elwpri" path="res://assets/sprites/terrain/Terrain_background.png" id="2_nxwod"]
-[ext_resource type="Texture2D" uid="uid://ct03hylchgif7" path="res://assets/sprites/terrain/green_colors.png" id="3_3x4u5"]
+[ext_resource type="Texture2D" uid="uid://ct03hylchgif7" path="res://assets/sprites/backgrounds/green_colors.png" id="3_3x4u5"]
 [ext_resource type="PackedScene" uid="uid://c68hyykf16g3d" path="res://scenes/door_fireboy.tscn" id="4_0th16"]
 [ext_resource type="PackedScene" uid="uid://bjvhkceb6kac2" path="res://scenes/door_watergirl.tscn" id="5_vj3v7"]
 [ext_resource type="PackedScene" uid="uid://c613x4guqbbfi" path="res://scenes/fireboy.tscn" id="6_bbo51"]
@@ -28,8 +28,13 @@
 [ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="30_ovr0t"]
 [ext_resource type="PackedScene" uid="uid://80wx2m681its" path="res://scenes/air_vent.tscn" id="30_yg108"]
 [ext_resource type="Texture2D" uid="uid://cbd4cdgbfkoqb" path="res://assets/sprites/terrain/Terrain (32x32).png" id="31_0lw7l"]
+[ext_resource type="Texture2D" uid="uid://bjjqex1fnl1pm" path="res://assets/images/menu/winner_window.png" id="31_781as"]
+[ext_resource type="AudioStream" uid="uid://cpwxnhbn5prj4" path="res://assets/sounds/button_selection.wav" id="32_pfr8s"]
 [ext_resource type="Texture2D" uid="uid://b4f4ue6djh4de" path="res://assets/sprites/liquids/lava1.png" id="32_qe4si"]
-[ext_resource type="AudioStream" uid="uid://p44dyhqgwnbj" path="res://assets/music/LevelMusic.mp3" id="38_kix41"]
+[ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="33_s47u1"]
+[ext_resource type="Script" uid="uid://deevj0mrsoqry" path="res://scripts/win_manager_level1.gd" id="34_jaa0q"]
+[ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="35_pfr8s"]
+[ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="35_s47u1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yg108"]
 texture = ExtResource("2_nxwod")
@@ -1728,6 +1733,43 @@ sources/17 = SubResource("TileSetAtlasSource_0th16")
 sources/18 = SubResource("TileSetAtlasSource_vj3v7")
 sources/19 = SubResource("TileSetAtlasSource_bbo51")
 
+[sub_resource type="Animation" id="Animation_poyfc"]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(556, -400)]
+}
+
+[sub_resource type="Animation" id="Animation_r8rrl"]
+resource_name = "show"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(556, -400), Vector2(556, 300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_knyjd"]
+_data = {
+&"RESET": SubResource("Animation_poyfc"),
+&"show": SubResource("Animation_r8rrl")
+}
+
 [node name="Level4" type="Node2D" unique_id=164072350]
 
 [node name="Background" type="TileMapLayer" parent="." unique_id=1197226319]
@@ -1735,7 +1777,7 @@ tile_map_data = PackedByteArray("AADw/wcABAACABEAAADv//n/BAABAAMAAADv//r/BAABAAQ
 tile_set = SubResource("TileSet_m1yk4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1015965509]
-position = Vector2(1, 59)
+position = Vector2(1, 83)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=591300435]
 collision_layer = 2
@@ -1754,7 +1796,7 @@ shape = SubResource("RectangleShape2D_yg108")
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=2146153699]
 z_index = 1
 position = Vector2(1, -2)
-tile_map_data = PackedByteArray("AADu/wsAEwAAAAMAAAD9/wsAEwABAAIAAAACAAsAEwABAAIAAAADAAsAEwABAAIAAAAHAAsAEQAAAAAAAAAIAAsAEQAAAAAAAAAJAAsAEQAAAAAAAAAKAAsAEQAAAAAAAAALAAsAEQAAAAAAAAAMAAsAEgAAAAAAAAANAAsAEwACAAMAAAAOAAsAEwACAAMAAAAPAAsAEwACAAMAAAAQAAsAEwACAAMAAAARAAsAEwAAAAMAAAARAAgAEwACAAMAAGARAAcAEwACAAMAAGARAAYAEwACAAMAAGARAAEAEwACAAMAAGARAAAAEwAEAAQAAAARAP//EwACAAMAAGARAP7/EwACAAMAAGARAP3/EwACAAMAAGARAPz/EwAEAAQAAAARAPv/EwACAAMAAGARAPr/EwACAAMAAGARAPn/EwACAAMAAGDu/woAEwACAAMAAFDu/wIAEwACAAMAAGDu/wEAEwACAAMAAGDu/wAAEwAEAAQAADDu////EwAEAAQAADDu//7/EwACAAMAAGDu//3/EwACAAMAAGDu//v/EwACAAMAAFDu//r/EwACAAMAAGDu//n/EwACAAMAAGDu//j/EwAAAAMAAADv//j/EwACAAMAAADw//j/EwACAAMAAADx//j/EwACAAMAAADy//j/EwACAAMAAADz//j/EwACAAMAAAD0//j/EwACAAMAAAD1//j/EwACAAMAAAD2//j/EwACAAMAAAD3//j/EwACAAMAAAD4//j/EwACAAMAAAD5//j/EwACAAMAAAD6//j/EwACAAMAAAD7//j/EwACAAMAAAD8//j/EwACAAMAAAD9//j/EwACAAMAAAD+//j/EwACAAMAAAD///j/EwACAAMAAAAAAPj/EwACAAMAAAABAPj/EwACAAMAAAACAPj/EwACAAMAAAADAPj/EwACAAMAAAAEAPj/EwACAAMAAAAFAPj/EwACAAMAAAAGAPj/EwACAAMAAAAHAPj/EwACAAMAAAAIAPj/EwACAAMAAAAJAPj/EwACAAMAAAAKAPj/EwACAAMAAAALAPj/EwACAAMAAAAMAPj/EwACAAMAAAANAPj/EwACAAMAAAAOAPj/EwACAAMAAAAPAPj/EwACAAMAAAAQAPj/EwACAAMAAAARAPj/EwAAAAMAAAARAAoAEwACAAMAAGARAAkAEwACAAMAAGDx/wsAEwACAAMAAADy/wsAEwACAAMAAADz/wsACQAAAAAAAAD0/wsAAwAAAAAAAAD1/wsAAwAAAAAAAAD2/wsAAwAAAAAAAAD3/wsAAwAAAAAAAAD4/wsAAwAAAAAAAAD5/wsAAwAAAAAAAAD6/wsACgAAAAAAAAD7/wsAEwAFAAQAAED8/wsAEwABAAIAAAABAAsAEwABAAIAAADv/wsAEwACAAMAAADw/wsAEwACAAMAAADu/wYAEwACAAMAAFDu/wcAEwACAAMAAGDu/wgAEwACAAMAAGDu/wkAEwACAAMAAEDu//z/EwACAAMAAFARAAIAEwACAAMAAGAGAAsAEQAAAAAAAAAFAAsAEAAAAAAAAAAEAAsAEwAFAAQAAFAAAAsAEwABAAIAAAD//wsAEwABAAIAAAD+/wsAEwABAAIAAAD//wgAEwABAAAAAAAAAAgAEwABAAAAAAABAAgAEwABAAAAAAD+/wgAEwABAAAAAAD9/wgAEwAGAAQAAAACAAgAEwAHAAQAAAD8/wkAEwAGAAQAAAD7/woAEwAGAAQAAAADAAkAEwAHAAQAAAAEAAoAEwAHAAQAAAD9/wkAEwAFAAIAAAD+/wkAEwABAAEAAAD//wkAEwABAAEAAAAAAAkAEwABAAEAAAABAAkAEwABAAEAAAACAAkAEwADAAIAAAD8/woAEwAFAAIAAAD9/woAEwABAAEAAAD+/woAEwABAAEAAAD//woAEwABAAEAAAAAAAoAEwABAAEAAAABAAoAEwABAAEAAAACAAoAEwABAAEAAAADAAoAEwADAAIAAAD9/wUAEwAHAAQAAAACAAUAEwAGAAQAAAD8/wUAEwACAAMAAAADAAUAEwACAAMAAAD7/wUAEwACAAMAAAAEAAUAEwACAAMAAAANAAUAEwACAAMAAAAOAAUAEwACAAMAAAAFAAUACQAAAAAAAAAGAAUAAwAAAAAAAAAHAAUAAwAAAAAAAAAIAAUAAwAAAAAAAAAJAAUAAwAAAAAAAAAKAAUAAwAAAAAAAAALAAUAAwAAAAAAAAAMAAUACgAAAAAAAADz/wUAEAAAAAAAAAD0/wUAEQAAAAAAAAD1/wUAEQAAAAAAAAD2/wUAEQAAAAAAAAD3/wUAEQAAAAAAAAD4/wUAEQAAAAAAAAD5/wUAEQAAAAAAAAD6/wUAEgAAAAAAAAAPAAQAEwAAAAAAAAAPAAUAEwAFAAQAAEAQAAQAEwAFAAIAAAAQAAUAEwABAAIAAAARAAMAEwAFAAQAAAARAAQAEwACAAEAAAARAAUAEwAFAAQAACDu/wMAEwAFAAQAABDu/wQAEwAAAAEAAADu/wUAEwAFAAQAADDv/wUAEwABAAIAAADw/wUAEwAFAAQAAFDx/wUAEwACAAMAADDy/wUAEwACAAMAADDv/wMAEwACAAAAAADw/wQAEwACAAAAAADv/wQAEwABAAEAAAD//wEAEwAAAAEAAAAAAAEAEwACAAEAAAABAAAAEwAAAAAAADD+/wAAEwAAAAAAACD9////EwABAAMAAAACAP//EwADAAMAAAABAP//EwABAAEAAAD+////EwABAAEAAAD//wAAEwAFAAAAAAAAAAAAEwADAAAAAAABAAIAEwAGAAAAAAACAAIAEwAGAAAAAAADAAIAEwAGAAAAAAAEAAIAEwAGAAAAAAAFAAIAEwAGAAAAAAAGAAIAEwAGAAAAAAAHAAIAEwAGAAAAAAD+/wIAEwAGAAAAAAD9/wIAEwAGAAAAAAD8/wIAEwAGAAAAAAD7/wIAEwAGAAAAAAD6/wIAEwAGAAAAAAD5/wIAEwAGAAAAAAD4/wIAEwAGAAAAAAD//wIAEwAIAAMAAAAAAAIAEwAIAAMAAAAIAAIAEwAIAAMAAAAJAAIAEwAIAAMAAAAKAAIAEwAIAAMAAAALAAIAEwAIAAMAAAD0/wIAEwAIAAMAAAD1/wIAEwAIAAMAAAD2/wIAEwAIAAMAAAD3/wIAEwAIAAMAAAAMAAIAEwAHAAQAAADz/wIAEwAGAAQAAAAOAAAAEwABAAMAAAAPAAAAEwACAAMAAAAQAAAAEwACAAMAAAAQAAMAEwAAAAAAAADx/wAAEwADAAMAAADw/wAAEwACAAMAAADv/wAAEwACAAMAAADz//v/EwAHAAQAAGD0//v/EwACAAMAAAD1//v/EwACAAMAAAD2//v/EwAEAAQAAGD2//z/EwACAAMAAFD2//3/EwACAAMAAFD2//7/EwACAAMAAFD2////EwACAAMAAFD2/wAAEwACAAMAAFD2/wEAEwACAAMAAFD3//v/EwACAAMAAAD3////CQAAAAAAAAD4//v/EwACAAMAAAD4////AwAAAAAAAAD5//v/EwACAAMAAAD5////AwAAAAAAAAD6//v/EwACAAMAAAD6////CgAAAAAAAAD7//v/EwACAAMAAAD8//v/EwAHAAQAAAADAPv/EwAGAAQAAAAEAPv/EwACAAMAAAAFAPv/EwACAAMAAAAFAP//EAAAAAAAAAAGAPv/EwACAAMAAAAGAP//EQAAAAAAAAAHAPv/EwACAAMAAAAHAP//EQAAAAAAAAAIAPv/EwACAAMAAAAIAP//EgAAAAAAAAAJAPv/EwAEAAQAAGAJAPz/EwACAAMAAFAJAP3/EwACAAMAAFAJAP7/EwACAAMAAFAJAP//EwACAAMAAFAJAAAAEwACAAMAAFAJAAEAEwACAAMAAFAKAPv/EwACAAMAAAALAPv/EwACAAMAAAAMAPv/EwAHAAQAAAD/////EwABAAEAAAAAAP//EwABAAEAAAD///7/EwAFAAIAAAAAAP7/EwADAAIAAAABAP7/EwACAAAAAAD+//7/EwAAAAAAAAD///3/EwAAAAAAAAAAAP3/EwACAAAAAAA=")
+tile_map_data = PackedByteArray("AADu/wsAEwADAAIAAAD9/wsAEwABAAEAAAACAAsAEwABAAEAAAADAAsAEwABAAEAAAAHAAsAEQAAAAAAAAAIAAsAEQAAAAAAAAAJAAsAEQAAAAAAAAAKAAsAEQAAAAAAAAALAAsAEQAAAAAAAAAMAAsAEgAAAAAAAAANAAsAEwABAAAAAAAOAAsAEwABAAAAAAAPAAsAEwABAAAAAAAQAAsAEwABAAAAAAARAAsAEwAFAAIAAAARAAgAEwAFAAEAAAARAAcAEwAFAAEAAAARAAYAEwAFAAEAAAARAAEAEwAAAAEAAAARAAAAEwAGAAIAADARAP//EwAAAAEAAAARAP7/EwAAAAEAAAARAP3/EwAAAAEAAAARAPz/EwAAAAEAAAARAPv/EwAAAAEAAAARAPr/EwAAAAEAAAARAPn/EwAAAAEAAADu/woAEwACAAEAAADu/wIAEwACAAEAAADu/wEAEwACAAEAAADu/wAAEwAGAAIAAADu////EwACAAEAAADu//7/EwACAAEAAADu//3/EwACAAEAAADu//v/EwACAAEAAADu//r/EwACAAEAAADu//n/EwACAAEAAADu//j/EwADAAAAAADv//j/EwAEAAAAAADw//j/EwAEAAAAAADx//j/EwAEAAAAAADy//j/EwAEAAAAAADz//j/EwAEAAAAAAD0//j/EwAEAAAAAAD1//j/EwAEAAAAAAD2//j/EwAEAAAAAAD3//j/EwAEAAAAAAD4//j/EwAEAAAAAAD5//j/EwABAAIAAAD6//j/EwABAAIAAAD7//j/EwABAAIAAAD8//j/EwABAAIAAAD9//j/EwABAAIAAAD+//j/EwABAAIAAAD///j/EwABAAIAAAAAAPj/EwABAAIAAAABAPj/EwABAAIAAAACAPj/EwABAAIAAAADAPj/EwABAAIAAAAEAPj/EwABAAIAAAAFAPj/EwABAAIAAAAGAPj/EwABAAIAAAAHAPj/EwABAAIAAAAIAPj/EwABAAIAAAAJAPj/EwABAAIAAAAKAPj/EwABAAIAAAALAPj/EwABAAIAAAAMAPj/EwABAAIAAAANAPj/EwABAAIAAAAOAPj/EwABAAIAAAAPAPj/EwABAAIAAAAQAPj/EwABAAIAAAARAPj/EwAFAAAAAAARAAoAEwAFAAEAAAARAAkAEwAFAAEAAADx/wsAEwABAAAAAADy/wsAEwABAAAAAADz/wsACQAAAAAAAAD0/wsAAwAAAAAAAAD1/wsAAwAAAAAAAAD2/wsAAwAAAAAAAAD3/wsAAwAAAAAAAAD4/wsAAwAAAAAAAAD5/wsAAwAAAAAAAAD6/wsACgAAAAAAAAD7/wsAEwAFAAIAAAD8/wsAEwABAAEAAAABAAsAEwABAAEAAADv/wsAEwABAAAAAADw/wsAEwABAAAAAADu/wYAEwACAAEAAADu/wcAEwACAAEAAADu/wgAEwACAAEAAADu/wkAEwACAAEAAADu//z/EwACAAEAAAARAAIAEwAAAAEAAAAGAAsAEQAAAAAAAAAFAAsAEAAAAAAAAAAEAAsAEwADAAIAAAAAAAsAEwABAAEAAAD//wsAEwABAAEAAAD+/wsAEwABAAEAAAD//wgAEwABAAAAAAAAAAgAEwABAAAAAAABAAgAEwABAAAAAAD+/wgAEwABAAAAAAD9/wgAEwAGAAQAAAACAAgAEwAHAAQAAAD8/wkAEwAGAAQAAAD7/woAEwAGAAQAAAADAAkAEwAHAAQAAAAEAAoAEwAHAAQAAAD9/wkAEwAFAAIAAAD+/wkAEwABAAEAAAD//wkAEwABAAEAAAAAAAkAEwABAAEAAAABAAkAEwABAAEAAAACAAkAEwADAAIAAAD8/woAEwAFAAIAAAD9/woAEwABAAEAAAD+/woAEwABAAEAAAD//woAEwABAAEAAAAAAAoAEwABAAEAAAABAAoAEwABAAEAAAACAAoAEwABAAEAAAADAAoAEwADAAIAAAD9/wUAEwAHAAQAAAACAAUAEwAGAAQAAAD8/wUAEwACAAMAAAADAAUAEwACAAMAAAD7/wUAEwACAAMAAAAEAAUAEwACAAMAAAANAAUAEwACAAMAAAAOAAUAEwACAAMAAAAFAAUACQAAAAAAAAAGAAUAAwAAAAAAAAAHAAUAAwAAAAAAAAAIAAUAAwAAAAAAAAAJAAUAAwAAAAAAAAAKAAUAAwAAAAAAAAALAAUAAwAAAAAAAAAMAAUACgAAAAAAAADz/wUAEAAAAAAAAAD0/wUAEQAAAAAAAAD1/wUAEQAAAAAAAAD2/wUAEQAAAAAAAAD3/wUAEQAAAAAAAAD4/wUAEQAAAAAAAAD5/wUAEQAAAAAAAAD6/wUAEgAAAAAAAAAPAAQAEwAAAAAAAAAPAAUAEwAFAAQAAEAQAAQAEwAFAAIAAAAQAAUAEwABAAIAAAARAAMAEwAFAAIAAAARAAQAEwABAAEAAAARAAUAEwAFAAAAAADu/wMAEwADAAIAAADu/wQAEwABAAEAAADu/wUAEwADAAAAAADv/wUAEwABAAIAAADw/wUAEwAFAAQAAFDx/wUAEwACAAMAADDy/wUAEwACAAMAADDv/wMAEwACAAAAAADw/wQAEwACAAAAAADv/wQAEwABAAEAAAD//wEAEwAAAAEAAAAAAAEAEwACAAEAAAABAAAAEwAAAAAAADD+/wAAEwAAAAAAACD9////EwABAAMAAAACAP//EwADAAMAAAABAP//EwABAAEAAAD+////EwABAAEAAAD//wAAEwAFAAAAAAAAAAAAEwADAAAAAAABAAIAEwAGAAAAAAACAAIAEwAGAAAAAAADAAIAEwAGAAAAAAAEAAIAEwAGAAAAAAAFAAIAEwAGAAAAAAAGAAIAEwAGAAAAAAAHAAIAEwAGAAAAAAD+/wIAEwAGAAAAAAD9/wIAEwAGAAAAAAD8/wIAEwAGAAAAAAD7/wIAEwAGAAAAAAD6/wIAEwAGAAAAAAD5/wIAEwAGAAAAAAD4/wIAEwAGAAAAAAD//wIAEwAIAAMAAAAAAAIAEwAIAAMAAAAIAAIAEwAIAAMAAAAJAAIAEwAIAAMAAAAKAAIAEwAIAAMAAAALAAIAEwAIAAMAAAD0/wIAEwAIAAMAAAD1/wIAEwAIAAMAAAD2/wIAEwAIAAMAAAD3/wIAEwAIAAMAAAAMAAIAEwAHAAQAAADz/wIAEwAGAAQAAAAOAAAAEwABAAMAAAAPAAAAEwACAAMAAAAQAAAAEwACAAMAAAAQAAMAEwAAAAAAAADx/wAAEwADAAMAAADw/wAAEwACAAMAAADv/wAAEwACAAMAAADz//v/EwAHAAQAAGD0//v/EwACAAMAAAD1//v/EwACAAMAAAD2//v/EwAEAAQAAGD2//z/EwACAAMAAFD2//3/EwACAAMAAFD2//7/EwACAAMAAFD2////EwACAAMAAFD2/wAAEwACAAMAAFD2/wEAEwACAAMAAFD3//v/EwACAAMAAAD3////CQAAAAAAAAD4//v/EwACAAMAAAD4////AwAAAAAAAAD5//v/EwACAAMAAAD5////AwAAAAAAAAD6//v/EwACAAMAAAD6////CgAAAAAAAAD7//v/EwACAAMAAAD8//v/EwAHAAQAAAADAPv/EwAGAAQAAAAEAPv/EwACAAMAAAAFAPv/EwACAAMAAAAFAP//EAAAAAAAAAAGAPv/EwACAAMAAAAGAP//EQAAAAAAAAAHAPv/EwACAAMAAAAHAP//EQAAAAAAAAAIAPv/EwACAAMAAAAIAP//EgAAAAAAAAAJAPv/EwAEAAQAAGAJAPz/EwACAAMAAFAJAP3/EwACAAMAAFAJAP7/EwACAAMAAFAJAP//EwACAAMAAFAJAAAAEwACAAMAAFAJAAEAEwACAAMAAFAKAPv/EwACAAMAAAALAPv/EwACAAMAAAAMAPv/EwAHAAQAAAD/////EwABAAEAAAAAAP//EwABAAEAAAD///7/EwAFAAIAAAAAAP7/EwADAAIAAAABAP7/EwACAAAAAAD+//7/EwAAAAAAAAD///3/EwAAAAAAAAAAAP3/EwACAAAAAADu/wwAEwABAAEAAADv/wwAEwABAAEAAADw/wwAEwABAAEAAADx/wwAEwABAAEAAADy/wwAEwABAAEAAADz/wwAEwABAAEAAAD0/wwAEwABAAEAAAD1/wwAEwABAAEAAAD2/wwAEwABAAEAAAD3/wwAEwABAAEAAAD4/wwAEwABAAEAAAD5/wwAEwABAAEAAAD6/wwAEwABAAEAAAD7/wwAEwABAAEAAAD8/wwAEwABAAEAAAD9/wwAEwABAAEAAAD+/wwAEwABAAEAAAD//wwAEwABAAEAAAAAAAwAEwABAAEAAAABAAwAEwABAAEAAAACAAwAEwABAAEAAAADAAwAEwABAAEAAAAEAAwAEwABAAEAAAAFAAwAEwABAAEAAAAGAAwAEwABAAEAAAAHAAwAEwABAAEAAAAIAAwAEwABAAEAAAAJAAwAEwABAAEAAAAKAAwAEwABAAEAAAALAAwAEwABAAEAAAAMAAwAEwABAAEAAAANAAwAEwABAAEAAAAOAAwAEwABAAEAAAAPAAwAEwABAAEAAAAQAAwAEwABAAEAAAARAAwAEwABAAEAAAA=")
 tile_set = SubResource("TileSet_5kcvr")
 
 [node name="Red_Coin" parent="." unique_id=1200659554 instance=ExtResource("9_8mab7")]
@@ -1794,10 +1836,10 @@ position = Vector2(-240, 40)
 position = Vector2(240, 40)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("6_bbo51")]
-position = Vector2(-368, 56)
+position = Vector2(-136, 48)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("7_xb7os")]
-position = Vector2(491, 336)
+position = Vector2(144, 64)
 
 [node name="Red_Coin6" parent="." unique_id=1611870972 instance=ExtResource("9_8mab7")]
 position = Vector2(83, -72)
@@ -1835,5 +1877,214 @@ position = Vector2(-497.00003, -8.000001)
 [node name="AirVent2" parent="." unique_id=1399321948 instance=ExtResource("30_yg108")]
 position = Vector2(499.00003, -8)
 
-[node name="LevelMusic" type="AudioStreamPlayer" parent="." unique_id=1207690267]
-stream = ExtResource("38_kix41")
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1735286517]
+
+[node name="WinPanel" type="Panel" parent="CanvasLayer" unique_id=1451908480]
+process_mode = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -724.0
+offset_right = 20.0
+offset_bottom = -684.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BackgroundImage" type="TextureRect" parent="CanvasLayer/WinPanel" unique_id=1605708237]
+layout_mode = 0
+offset_left = -178.0
+offset_top = -118.0
+offset_right = 224.0
+offset_bottom = 215.0
+texture = ExtResource("31_781as")
+metadata/_edit_use_anchors_ = true
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/WinPanel" unique_id=1141753298]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -49.0
+offset_right = 118.0
+offset_bottom = -23.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 18
+text = "LEVEL  COMPLETE  !"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer/WinPanel" unique_id=1227231676]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -10.0
+offset_right = 85.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 18
+text = "10 : 30"
+metadata/_edit_use_anchors_ = true
+
+[node name="TitleLabel2" type="Label" parent="CanvasLayer/WinPanel" unique_id=1771601138]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -10.0
+offset_right = 16.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 18
+text = "TIME"
+metadata/_edit_use_anchors_ = true
+
+[node name="BackButton" type="Button" parent="CanvasLayer/WinPanel" unique_id=1824464007]
+process_mode = 2
+layout_mode = 0
+offset_left = -80.0
+offset_top = 121.0
+offset_right = 126.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_colors/font_pressed_color = Color(0.78431374, 0.60784316, 0.12156863, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8862745, 0.47843137, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 18
+text = "BACK  TO  MENU"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/WinPanel" unique_id=1684755682]
+libraries/ = SubResource("AnimationLibrary_knyjd")
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer/WinPanel" unique_id=2074977810]
+stream = ExtResource("32_pfr8s")
+
+[node name="RedCoinsLabel" type="Label" parent="CanvasLayer/WinPanel" unique_id=1148664650]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 24.0
+offset_right = 57.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 17
+text = "X  0"
+metadata/_edit_use_anchors_ = true
+
+[node name="BlueCoinsLabel" type="Label" parent="CanvasLayer/WinPanel" unique_id=286687958]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 55.0
+offset_right = 57.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 17
+text = "X  0"
+metadata/_edit_use_anchors_ = true
+
+[node name="GreenCoinsLabel" type="Label" parent="CanvasLayer/WinPanel" unique_id=2106941260]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 85.0
+offset_right = 57.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 17
+text = "X  0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Red_Coin" parent="CanvasLayer/WinPanel" unique_id=317673612 instance=ExtResource("9_8mab7")]
+position = Vector2(-1, 37)
+
+[node name="Green_Coin" parent="CanvasLayer/WinPanel" unique_id=162450931 instance=ExtResource("33_s47u1")]
+position = Vector2(-1, 98)
+
+[node name="Blue_Coin" parent="CanvasLayer/WinPanel" unique_id=217733122 instance=ExtResource("8_pt6r5")]
+position = Vector2(-1, 68)
+
+[node name="LosePanel" type="Panel" parent="CanvasLayer" unique_id=1640126563]
+process_mode = 3
+visible = false
+offset_left = 556.0
+offset_top = -400.0
+offset_right = 596.0
+offset_bottom = -360.0
+
+[node name="BackgroundImage" type="TextureRect" parent="CanvasLayer/LosePanel" unique_id=1486758620]
+layout_mode = 0
+offset_left = -178.0
+offset_top = -118.0
+offset_right = 224.0
+offset_bottom = 215.0
+texture = ExtResource("31_781as")
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/LosePanel" unique_id=976679402]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -20.0
+offset_right = 118.0
+offset_bottom = 6.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 18
+text = "GAME  OVER  !"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="CanvasLayer/LosePanel" unique_id=1515814732]
+process_mode = 3
+layout_mode = 0
+offset_left = -80.0
+offset_top = 32.0
+offset_right = 126.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_colors/font_pressed_color = Color(0.78431374, 0.60784316, 0.12156863, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8862745, 0.47843137, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 18
+text = "BACK  TO  MENU"
+flat = true
+
+[node name="RetryButton" type="Button" parent="CanvasLayer/LosePanel" unique_id=687947382]
+process_mode = 3
+layout_mode = 0
+offset_left = -82.0
+offset_top = 89.0
+offset_right = 124.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_colors/font_pressed_color = Color(0.78431374, 0.60784316, 0.12156863, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8862745, 0.47843137, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 18
+text = "RETRY"
+flat = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/LosePanel" unique_id=644916266]
+process_mode = 3
+libraries/ = SubResource("AnimationLibrary_knyjd")
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer/LosePanel" unique_id=395198062]
+stream = ExtResource("32_pfr8s")
+
+[node name="WinManager" type="Node2D" parent="." unique_id=1964130977]
+script = ExtResource("34_jaa0q")
+fire_door = NodePath("../Door")
+water_door = NodePath("../Door2")
+win_panel = NodePath("../CanvasLayer/WinPanel")
+level_id = 4
+lose_panel = NodePath("../CanvasLayer/LosePanel")
+required_completed_levels = Array[int]([2, 4])
+branch_unlock_levels = Array[int]([6])
+
+[node name="Timer" parent="." unique_id=852601352 instance=ExtResource("35_pfr8s")]
+z_index = 1
+position = Vector2(0, -220)
+scale = Vector2(0.5, 0.5)
+
+[node name="Music" parent="." unique_id=1372747149 instance=ExtResource("35_s47u1")]
