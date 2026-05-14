@@ -10,9 +10,10 @@ size = Vector2(65, 53)
 script = ExtResource("1_ncfea")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=790812106]
+position = Vector2(0, -5)
 texture = ExtResource("1_4kwec")
 region_enabled = true
-region_rect = Rect2(0, 8.033531, 76, 56.96647)
+region_rect = Rect2(10.268385, 8.033531, 65.73161, 42.9682)
 
 [node name="InteractionArea" type="Area2D" parent="." unique_id=1559561479]
 collision_mask = 6
@@ -20,3 +21,9 @@ collision_mask = 6
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1483460520]
 position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_ncfea")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2045187511]
+position = Vector2(0, 21)
+texture = ExtResource("1_4kwec")
+region_enabled = true
+region_rect = Rect2(0, 50.6689, 76, 14.3311)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cikqrum7460o3"]
 
-[ext_resource type="Script" uid="uid://br5h3bj5fmgcs" path="res://scripts/lever.gd" id="1_bn8se"]
+[ext_resource type="Script" uid="uid://cl47orejcaldp" path="res://scripts/lever.gd" id="1_bn8se"]
 [ext_resource type="Texture2D" uid="uid://cjq10m1t5ry56" path="res://assets/images/levers/purple-lever.png" id="2_bn8se"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ncfea"]
@@ -9,10 +9,17 @@ size = Vector2(43, 37)
 [node name="Lever" type="Node2D" unique_id=803711641]
 script = ExtResource("1_bn8se")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790812106]
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1413361744]
+position = Vector2(1, 21)
 texture = ExtResource("2_bn8se")
 region_enabled = true
-region_rect = Rect2(3.6473274, 11.348982, 61.511707, 46.41619)
+region_rect = Rect2(0, 44.824936, 70, 25.175064)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790812106]
+position = Vector2(0, -8)
+texture = ExtResource("2_bn8se")
+region_enabled = true
+region_rect = Rect2(3.6473274, 11.348982, 61.511707, 33.78106)
 
 [node name="InteractionArea" type="Area2D" parent="." unique_id=1559561479]
 collision_mask = 6

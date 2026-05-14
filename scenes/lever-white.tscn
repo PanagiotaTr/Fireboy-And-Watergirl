@@ -10,9 +10,16 @@ size = Vector2(57, 48)
 script = ExtResource("1_pnbf7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=790812106]
+position = Vector2(4, -5)
 texture = ExtResource("2_pnbf7")
 region_enabled = true
-region_rect = Rect2(9.17868, 8.033531, 66.82132, 49.73164)
+region_rect = Rect2(28.17178, 8.033531, 47.82822, 34.10014)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=748415124]
+position = Vector2(1, 22)
+texture = ExtResource("2_pnbf7")
+region_enabled = true
+region_rect = Rect2(0, 43.55838, 88, 23.44162)
 
 [node name="InteractionArea" type="Area2D" parent="." unique_id=1559561479]
 collision_mask = 6
