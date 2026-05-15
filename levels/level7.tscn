@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="35_jjxkk"]
 [ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="35_u8anh"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="36_8ypjr"]
-[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="37_pj4x0"]
+[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="37_pj4x0"]
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="38_04g5n"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="39_kpv6l"]
 [ext_resource type="PackedScene" uid="uid://ckv8vp7v2rde" path="res://scenes/red_coin.tscn" id="40_x377h"]
@@ -2983,6 +2983,9 @@ position = Vector2(-506, -250)
 [node name="Door2" parent="Doors" unique_id=383490873 instance=ExtResource("4_prlt8")]
 position = Vector2(-421, -250)
 
+[node name="Green_Coin" parent="." unique_id=162450931 instance=ExtResource("36_8ypjr")]
+position = Vector2(-529, -125.00001)
+
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("8_04g5n")]
 position = Vector2(-149, -233)
 
@@ -3086,7 +3089,7 @@ tile_set = SubResource("TileSet_2nhjh")
 [node name="Music" parent="." unique_id=1372747149 instance=ExtResource("35_jjxkk")]
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("35_u8anh")]
-position = Vector2(0, -284)
+position = Vector2(0, -286)
 scale = Vector2(0.5, 0.5)
 
 [node name="Levers" type="Node2D" parent="." unique_id=465893448]
@@ -3108,9 +3111,6 @@ scale = Vector2(0.8, 0.8)
 
 [node name="BlueLever" parent="Levers" unique_id=881810939 instance=ExtResource("35_8ypjr")]
 position = Vector2(-1196, 0)
-
-[node name="Green_Coin" parent="." unique_id=162450931 instance=ExtResource("36_8ypjr")]
-position = Vector2(-529, -125.00001)
 
 [node name="WinManager" type="Node2D" parent="." unique_id=1336255241]
 script = ExtResource("37_pj4x0")

@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://bujrqseubcdl8" path="res://scenes/rock.tscn" id="34_05uw5"]
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="36_kqk47"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="37_qx21w"]
-[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="38_dclkh"]
+[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="38_dclkh"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="39_dclkh"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="39_kqk47"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="39_ntr31"]
@@ -3041,7 +3041,7 @@ press_duration = 0.5
 [node name="MovingPlatform" parent="Button-Plate-Up" unique_id=1524849898 instance=ExtResource("26_b4jtt")]
 position = Vector2(-287.99997, -89)
 scale = Vector2(0.5, 0.5)
-move_offset = Vector2(0, -50)
+move_offset = Vector2(0, -60)
 
 [node name="ButtonPlate" parent="Button-Plate-Up" unique_id=34841336 instance=ExtResource("8_8380d")]
 position = Vector2(146, -100)

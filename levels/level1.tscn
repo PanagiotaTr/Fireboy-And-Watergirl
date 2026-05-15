@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://b7stjb0tcr4q0" path="res://assets/sprites/liquids/water.png" id="28_tk73g"]
 [ext_resource type="Texture2D" uid="uid://ciqt6ex1rpkmj" path="res://assets/sprites/terrain/Terrain (32x32).png" id="29_q7fj0"]
 [ext_resource type="Texture2D" uid="uid://ddbohkevb376p" path="res://assets/sprites/liquids/lava1.png" id="30_yx6rh"]
-[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="31_kklod"]
+[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="31_kklod"]
 [ext_resource type="PackedScene" uid="uid://b7iwxx0ypfjd5" path="res://scenes/push_box.tscn" id="34_3612o"]
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="36_poyfc"]
 [ext_resource type="PackedScene" uid="uid://by0hjnb16cw22" path="res://scenes/enemy.tscn" id="36_sqx3p"]
@@ -2636,14 +2636,40 @@ position = Vector2(401, -153)
 [node name="Door2" parent="." unique_id=1393078472 instance=ExtResource("2_5xpsa")]
 position = Vector2(475, -152)
 
+[node name="Coins" type="Node2D" parent="." unique_id=2030394628]
+
+[node name="Blue_Coin2" parent="Coins" unique_id=1271644813 instance=ExtResource("5_cnn1a")]
+position = Vector2(-8, 35)
+
+[node name="Red_Coin2" parent="Coins" unique_id=633736793 instance=ExtResource("6_sqx3p")]
+position = Vector2(-342, 35)
+
+[node name="Blue_Coin3" parent="Coins" unique_id=1798698291 instance=ExtResource("5_cnn1a")]
+position = Vector2(-172, -155)
+
+[node name="Blue_Coin4" parent="Coins" unique_id=573412398 instance=ExtResource("5_cnn1a")]
+position = Vector2(199, -163)
+
+[node name="Red_Coin3" parent="Coins" unique_id=1058493239 instance=ExtResource("6_sqx3p")]
+position = Vector2(176, -63)
+
+[node name="Red_Coin4" parent="Coins" unique_id=1740903551 instance=ExtResource("6_sqx3p")]
+position = Vector2(121, -163)
+
+[node name="Blue_Coin" parent="Coins" unique_id=2085393169 instance=ExtResource("5_cnn1a")]
+position = Vector2(176, 315)
+
+[node name="Red_Coin" parent="Coins" unique_id=1462983711 instance=ExtResource("6_sqx3p")]
+position = Vector2(-17, 316)
+
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("3_yn1es")]
 position = Vector2(521, -139)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("4_3612o")]
-position = Vector2(334, -145)
+position = Vector2(-383, 334)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
-position = Vector2(4, 83)
+position = Vector2(1, 80)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=2023583884]
 collision_layer = 2
@@ -2658,12 +2684,6 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1787907470]
 position = Vector2(579, 60)
 shape = SubResource("RectangleShape2D_0hol4")
-
-[node name="Blue_Coin" parent="." unique_id=2085393169 instance=ExtResource("5_cnn1a")]
-position = Vector2(176, 315)
-
-[node name="Red_Coin" parent="." unique_id=1462983711 instance=ExtResource("6_sqx3p")]
-position = Vector2(-17, 316)
 
 [node name="Lever" parent="." unique_id=803711641 instance=ExtResource("9_r8rrl")]
 z_index = 2
@@ -2691,7 +2711,7 @@ press_duration = 0.5
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("13_c124c")]
 z_index = 4
-position = Vector2(0, -219)
+position = Vector2(0, -226)
 scale = Vector2(0.5, 0.5)
 
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=656246726]
@@ -2711,18 +2731,6 @@ levels_to_unlock = Array[int]([2, 3, 4, 5])
 [node name="ButtonSound" type="AudioStreamPlayer" parent="WinManager" unique_id=1092001519]
 process_mode = 3
 stream = ExtResource("37_r8rrl")
-
-[node name="Blue_Coin3" parent="." unique_id=1798698291 instance=ExtResource("5_cnn1a")]
-position = Vector2(-172, -155)
-
-[node name="Blue_Coin4" parent="." unique_id=573412398 instance=ExtResource("5_cnn1a")]
-position = Vector2(199, -163)
-
-[node name="Red_Coin3" parent="." unique_id=1058493239 instance=ExtResource("6_sqx3p")]
-position = Vector2(176, -63)
-
-[node name="Red_Coin4" parent="." unique_id=1740903551 instance=ExtResource("6_sqx3p")]
-position = Vector2(121, -163)
 
 [node name="ButtonPlate3" parent="." unique_id=1733890532 instance=ExtResource("11_3bikl")]
 position = Vector2(-354, -36)
@@ -2928,12 +2936,6 @@ position = Vector2(-208.00003, -150)
 scale = Vector2(1.3, 1.3)
 
 [node name="Music" parent="." unique_id=441335538 instance=ExtResource("38_poyfc")]
-
-[node name="Blue_Coin2" parent="." unique_id=1271644813 instance=ExtResource("5_cnn1a")]
-position = Vector2(-8, 35)
-
-[node name="Red_Coin2" parent="." unique_id=633736793 instance=ExtResource("6_sqx3p")]
-position = Vector2(-342, 35)
 
 [connection signal="body_entered" from="MessageTrigger" to="." method="_on_message_trigger_body_entered"]
 [connection signal="body_entered" from="MessageTrigger1" to="." method="_on_message_trigger_1_body_entered"]

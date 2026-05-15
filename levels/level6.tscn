@@ -36,7 +36,7 @@
 [ext_resource type="Shader" uid="uid://biumjcx5rbi7m" path="res://scripts/level6.gdshader" id="34_lkdl6"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="36_w8dvk"]
 [ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="37_1kccm"]
-[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="38_rtl21"]
+[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="38_rtl21"]
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="39_itydq"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="40_iuc0j"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="41_1kccm"]
@@ -1821,12 +1821,6 @@ position = Vector2(517, 165)
 [node name="Door2" parent="." unique_id=1811223640 instance=ExtResource("24_5fw4y")]
 position = Vector2(-515, 262)
 
-[node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("25_rsknp")]
-position = Vector2(513, 191)
-
-[node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("26_ml047")]
-position = Vector2(-517, 282)
-
 [node name="Red_Coin" parent="." unique_id=1200659554 instance=ExtResource("28_lgkev")]
 position = Vector2(209, 0)
 
@@ -1850,6 +1844,12 @@ position = Vector2(98, 192)
 
 [node name="Blue_Coin4" parent="." unique_id=1781232623 instance=ExtResource("29_lkdl6")]
 position = Vector2(448, 223)
+
+[node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("25_rsknp")]
+position = Vector2(513, 191)
+
+[node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("26_ml047")]
+position = Vector2(-517, 282)
 
 [node name="Lever" parent="." unique_id=803711641 instance=ExtResource("31_w8dvk")]
 z_index = 2

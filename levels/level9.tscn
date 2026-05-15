@@ -47,7 +47,7 @@
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="44_e142t"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="45_6pr16"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="46_eyqvu"]
-[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="47_hj5ij"]
+[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="47_hj5ij"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="48_6pr16"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="49_eyqvu"]
 
@@ -3084,6 +3084,36 @@ position = Vector2(80, -184)
 [node name="Door2" parent="." unique_id=708426882 instance=ExtResource("24_2026m")]
 position = Vector2(-80, -184)
 
+[node name="Red_Coin" parent="." unique_id=1200659554 instance=ExtResource("41_bq5as")]
+position = Vector2(224, 224)
+
+[node name="Blue_Coin" parent="." unique_id=2085393169 instance=ExtResource("42_h8ypj")]
+position = Vector2(-223.00002, 226)
+
+[node name="Blue_Coin2" parent="." unique_id=1590876118 instance=ExtResource("42_h8ypj")]
+position = Vector2(160, 105.00001)
+
+[node name="Red_Coin2" parent="." unique_id=137774067 instance=ExtResource("41_bq5as")]
+position = Vector2(-161, 105)
+
+[node name="Red_Coin3" parent="." unique_id=1784697106 instance=ExtResource("41_bq5as")]
+position = Vector2(-528, 0)
+
+[node name="Blue_Coin3" parent="." unique_id=624883770 instance=ExtResource("42_h8ypj")]
+position = Vector2(529, 0)
+
+[node name="Blue_Coin4" parent="." unique_id=444518210 instance=ExtResource("42_h8ypj")]
+position = Vector2(357, -168)
+
+[node name="Red_Coin4" parent="." unique_id=411897005 instance=ExtResource("41_bq5as")]
+position = Vector2(-360, -166)
+
+[node name="Red_Coin5" parent="." unique_id=1572950296 instance=ExtResource("41_bq5as")]
+position = Vector2(80, -32)
+
+[node name="Blue_Coin5" parent="." unique_id=2029600241 instance=ExtResource("42_h8ypj")]
+position = Vector2(-81, -32)
+
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("25_wbscf")]
 position = Vector2(184, -152)
 
@@ -3162,36 +3192,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
-
-[node name="Red_Coin" parent="." unique_id=1200659554 instance=ExtResource("41_bq5as")]
-position = Vector2(224, 224)
-
-[node name="Blue_Coin" parent="." unique_id=2085393169 instance=ExtResource("42_h8ypj")]
-position = Vector2(-223.00002, 226)
-
-[node name="Blue_Coin2" parent="." unique_id=1590876118 instance=ExtResource("42_h8ypj")]
-position = Vector2(160, 105.00001)
-
-[node name="Red_Coin2" parent="." unique_id=137774067 instance=ExtResource("41_bq5as")]
-position = Vector2(-161, 105)
-
-[node name="Red_Coin3" parent="." unique_id=1784697106 instance=ExtResource("41_bq5as")]
-position = Vector2(-528, 0)
-
-[node name="Blue_Coin3" parent="." unique_id=624883770 instance=ExtResource("42_h8ypj")]
-position = Vector2(529, 0)
-
-[node name="Blue_Coin4" parent="." unique_id=444518210 instance=ExtResource("42_h8ypj")]
-position = Vector2(357, -168)
-
-[node name="Red_Coin4" parent="." unique_id=411897005 instance=ExtResource("41_bq5as")]
-position = Vector2(-360, -166)
-
-[node name="Red_Coin5" parent="." unique_id=1572950296 instance=ExtResource("41_bq5as")]
-position = Vector2(80, -32)
-
-[node name="Blue_Coin5" parent="." unique_id=2029600241 instance=ExtResource("42_h8ypj")]
-position = Vector2(-81, -32)
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("43_bglw3")]
 z_index = 1
