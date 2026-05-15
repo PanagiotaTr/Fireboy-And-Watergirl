@@ -1,32 +1,32 @@
 [gd_scene format=4 uid="uid://eyevtk7stvo1"]
 
-[ext_resource type="Texture2D" uid="uid://bshqdr6elwpri" path="res://assets/sprites/terrain/Terrain_background.png" id="1_43cms"]
-[ext_resource type="Texture2D" uid="uid://dkdlati3md2fu" path="res://assets/sprites/backgrounds/blue_green_colors.png" id="1_crwx7"]
-[ext_resource type="Texture2D" uid="uid://ct03hylchgif7" path="res://assets/sprites/backgrounds/green_colors.png" id="2_5peto"]
+[ext_resource type="Texture2D" uid="uid://dx3tgfo6uey5v" path="res://assets/sprites/terrain/Terrain_background.png" id="1_43cms"]
+[ext_resource type="Texture2D" uid="uid://pwlqml4qir1c" path="res://assets/sprites/backgrounds/blue_green_colors.png" id="1_crwx7"]
+[ext_resource type="Texture2D" uid="uid://b3ueymeiccowp" path="res://assets/sprites/backgrounds/green_colors.png" id="2_5peto"]
 [ext_resource type="PackedScene" uid="uid://cmupbgpu5nrva" path="res://scenes/moving_platform_white.tscn" id="4_vnxxs"]
 [ext_resource type="PackedScene" uid="uid://3ax06fq7susm" path="res://scenes/moving_platform.tscn" id="5_gxq45"]
 [ext_resource type="PackedScene" uid="uid://b3wy8sb631hp6" path="res://scenes/button_plate.tscn" id="6_el2p7"]
 [ext_resource type="PackedScene" uid="uid://bjvhkceb6kac2" path="res://scenes/door_watergirl.tscn" id="7_gg5ra"]
 [ext_resource type="PackedScene" uid="uid://c68hyykf16g3d" path="res://scenes/door_fireboy.tscn" id="8_bmipv"]
-[ext_resource type="Texture2D" uid="uid://do12cqduekajo" path="res://assets/sprites/liquids/lava3.png" id="9_478y7"]
-[ext_resource type="Texture2D" uid="uid://spuekmirhah8" path="res://assets/sprites/liquids/green2.png" id="10_crwx7"]
-[ext_resource type="Texture2D" uid="uid://crkjrhghvd6sn" path="res://assets/sprites/liquids/green3.png" id="11_6ibev"]
-[ext_resource type="Texture2D" uid="uid://lj31h7h6d6qu" path="res://assets/sprites/liquids/purple1.png" id="12_vv7bw"]
-[ext_resource type="Texture2D" uid="uid://d2el0nuoed8g2" path="res://assets/sprites/liquids/purple2.png" id="13_lo7lv"]
-[ext_resource type="Texture2D" uid="uid://buhob5a4fnq1l" path="res://assets/sprites/liquids/purple3.png" id="14_lxyii"]
-[ext_resource type="Texture2D" uid="uid://cvutu26473ggy" path="res://assets/sprites/liquids/water1.png" id="15_rak4e"]
-[ext_resource type="Texture2D" uid="uid://w5xfam1gvhth" path="res://assets/sprites/liquids/water2.png" id="16_7qha3"]
-[ext_resource type="Texture2D" uid="uid://bujov638kxy8p" path="res://assets/sprites/liquids/water3.png" id="17_gj6vr"]
-[ext_resource type="Texture2D" uid="uid://cx4w6g4mdo26c" path="res://assets/sprites/terrain/Terrain2.png" id="18_m5rgw"]
-[ext_resource type="Texture2D" uid="uid://diddxmcc6sx0r" path="res://assets/sprites/liquids/lava2.png" id="19_qi1km"]
-[ext_resource type="Texture2D" uid="uid://bakd2fn3sgehr" path="res://assets/sprites/liquids/green.png" id="20_rhrgi"]
-[ext_resource type="Texture2D" uid="uid://kecjwtu1f7h7" path="res://assets/sprites/liquids/green1.png" id="21_a2rbf"]
-[ext_resource type="Texture2D" uid="uid://bmjcu0a4vgnh" path="res://assets/sprites/liquids/purple.png" id="22_qfwrv"]
-[ext_resource type="Texture2D" uid="uid://bkmdiyksqqv0p" path="res://assets/sprites/liquids/water.png" id="23_hw3pv"]
+[ext_resource type="Texture2D" uid="uid://bb62ygi1b1a87" path="res://assets/sprites/liquids/lava3.png" id="9_478y7"]
+[ext_resource type="Texture2D" uid="uid://drtitvo0igtyn" path="res://assets/sprites/liquids/green2.png" id="10_crwx7"]
+[ext_resource type="Texture2D" uid="uid://cbxoxpolnl0f" path="res://assets/sprites/liquids/green3.png" id="11_6ibev"]
+[ext_resource type="Texture2D" uid="uid://bmxvy3k5ssk3v" path="res://assets/sprites/liquids/purple1.png" id="12_vv7bw"]
+[ext_resource type="Texture2D" uid="uid://csp5b8am0bpro" path="res://assets/sprites/liquids/purple2.png" id="13_lo7lv"]
+[ext_resource type="Texture2D" uid="uid://btwcjg8ecdfvw" path="res://assets/sprites/liquids/purple3.png" id="14_lxyii"]
+[ext_resource type="Texture2D" uid="uid://dslwdgoa2oajk" path="res://assets/sprites/liquids/water1.png" id="15_rak4e"]
+[ext_resource type="Texture2D" uid="uid://bla6iop4noo3a" path="res://assets/sprites/liquids/water2.png" id="16_7qha3"]
+[ext_resource type="Texture2D" uid="uid://68qcwfpmeev5" path="res://assets/sprites/liquids/water3.png" id="17_gj6vr"]
+[ext_resource type="Texture2D" uid="uid://cn3nej47q5uu1" path="res://assets/sprites/terrain/Terrain2.png" id="18_m5rgw"]
+[ext_resource type="Texture2D" uid="uid://8onpc30y31y1" path="res://assets/sprites/liquids/lava2.png" id="19_qi1km"]
+[ext_resource type="Texture2D" uid="uid://v0kt4ofwnhu5" path="res://assets/sprites/liquids/green.png" id="20_rhrgi"]
+[ext_resource type="Texture2D" uid="uid://dj7kwy4dp2fbk" path="res://assets/sprites/liquids/green1.png" id="21_a2rbf"]
+[ext_resource type="Texture2D" uid="uid://c7xsbs5v12dx1" path="res://assets/sprites/liquids/purple.png" id="22_qfwrv"]
+[ext_resource type="Texture2D" uid="uid://b7stjb0tcr4q0" path="res://assets/sprites/liquids/water.png" id="23_hw3pv"]
 [ext_resource type="PackedScene" uid="uid://cmnuhvhpavmxn" path="res://scenes/platform.tscn" id="23_i3cyh"]
-[ext_resource type="Texture2D" uid="uid://cbd4cdgbfkoqb" path="res://assets/sprites/terrain/Terrain (32x32).png" id="24_cc8ag"]
-[ext_resource type="Texture2D" uid="uid://j4puf273dr2u" path="res://assets/images/hanging log/log.png" id="24_x6jsp"]
-[ext_resource type="Texture2D" uid="uid://b4f4ue6djh4de" path="res://assets/sprites/liquids/lava1.png" id="25_lmria"]
+[ext_resource type="Texture2D" uid="uid://ciqt6ex1rpkmj" path="res://assets/sprites/terrain/Terrain (32x32).png" id="24_cc8ag"]
+[ext_resource type="Texture2D" uid="uid://2asli1gd562y" path="res://assets/images/hanging log/log.png" id="24_x6jsp"]
+[ext_resource type="Texture2D" uid="uid://ddbohkevb376p" path="res://assets/sprites/liquids/lava1.png" id="25_lmria"]
 [ext_resource type="PackedScene" uid="uid://ckv8vp7v2rde" path="res://scenes/red_coin.tscn" id="27_eq6ci"]
 [ext_resource type="PackedScene" uid="uid://dm3ypjyor0ynl" path="res://scenes/lever-white.tscn" id="27_u3me6"]
 [ext_resource type="PackedScene" uid="uid://dji3fkrcra8kn" path="res://scenes/blue_coin.tscn" id="28_qhq7i"]
@@ -34,11 +34,14 @@
 [ext_resource type="PackedScene" uid="uid://c613x4guqbbfi" path="res://scenes/fireboy.tscn" id="30_c3q3a"]
 [ext_resource type="PackedScene" uid="uid://by0hjnb16cw22" path="res://scenes/enemy.tscn" id="32_sv5e8"]
 [ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="33_478y7"]
-[ext_resource type="Texture2D" uid="uid://bjjqex1fnl1pm" path="res://assets/images/menu/winner_window.png" id="33_gg5ra"]
-[ext_resource type="AudioStream" uid="uid://cpwxnhbn5prj4" path="res://assets/sounds/button_selection.wav" id="34_bmipv"]
+[ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="33_gg5ra"]
+[ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="34_bmipv"]
 [ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="34_crwx7"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="35_478y7"]
-[ext_resource type="Script" uid="uid://deevj0mrsoqry" path="res://scripts/win_manager_level1.gd" id="36_crwx7"]
+[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="36_crwx7"]
+[ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="38_vv7bw"]
+[ext_resource type="AudioStream" uid="uid://b33dg1i6p16fh" path="res://assets/sounds/win_window_fast.wav" id="39_lo7lv"]
+[ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="39_lxyii"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ibev"]
 texture = ExtResource("1_crwx7")
@@ -3464,9 +3467,6 @@ metadata/_edit_use_anchors_ = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/WinPanel" unique_id=405602833]
 libraries/ = SubResource("AnimationLibrary_6ibev")
 
-[node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer/WinPanel" unique_id=667830326]
-stream = ExtResource("34_bmipv")
-
 [node name="RedCoinsLabel" type="Label" parent="CanvasLayer/WinPanel" unique_id=1643822366]
 layout_mode = 0
 offset_left = 17.0
@@ -3511,6 +3511,9 @@ position = Vector2(-1, 98)
 
 [node name="Blue_Coin" parent="CanvasLayer/WinPanel" unique_id=1780132613 instance=ExtResource("28_qhq7i")]
 position = Vector2(-1, 68)
+
+[node name="Music" parent="CanvasLayer/WinPanel" unique_id=523430806 instance=ExtResource("38_vv7bw")]
+stream = ExtResource("39_lo7lv")
 
 [node name="LosePanel" type="Panel" parent="CanvasLayer" unique_id=1898430853]
 process_mode = 3
@@ -3574,8 +3577,8 @@ flat = true
 process_mode = 3
 libraries/ = SubResource("AnimationLibrary_6ibev")
 
-[node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer/LosePanel" unique_id=1787636896]
-stream = ExtResource("34_bmipv")
+[node name="Music" parent="CanvasLayer/LosePanel" unique_id=110153894 instance=ExtResource("38_vv7bw")]
+stream = ExtResource("39_lxyii")
 
 [node name="WinManager" type="Node2D" parent="." unique_id=1426031757]
 script = ExtResource("36_crwx7")
@@ -3586,6 +3589,10 @@ level_id = 3
 lose_panel = NodePath("../CanvasLayer/LosePanel")
 required_completed_levels = Array[int]([3, 5])
 branch_unlock_levels = Array[int]([7])
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="WinManager" unique_id=1928753656]
+process_mode = 3
+stream = ExtResource("34_bmipv")
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("33_478y7")]
 z_index = 4

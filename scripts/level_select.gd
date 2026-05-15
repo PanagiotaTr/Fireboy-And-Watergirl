@@ -30,12 +30,18 @@ func _ready() -> void:
 		button.mouse_entered.connect(func(b := button): _hover(b))
 		button.mouse_exited.connect(func(b := button): _exit(b))
 
+
 func _go_to_level(level_id: int) -> void:
 	if !GameManager.is_level_unlocked(level_id):
 		return
 	
 	if GameManager.completed_levels.has(level_id):
 		return
+
+	if level_id >= 1 and level_id <= 10:
+		MusicManager.stop_music()
+	else:
+		MusicManager.play_music("shared_music")
 
 	get_tree().change_scene_to_file("res://levels/level%d.tscn" % level_id)
 

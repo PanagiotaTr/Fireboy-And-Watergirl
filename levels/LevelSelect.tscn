@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://cv3nrqa5pppwa"]
 
-[ext_resource type="Texture2D" uid="uid://bpsakqdqm2o5y" path="res://assets/images/menu/level_selection.png" id="1_5rv0k"]
-[ext_resource type="Script" uid="uid://4pb52g6r7twd" path="res://scripts/level_select.gd" id="1_py71h"]
-[ext_resource type="Texture2D" uid="uid://dnpuqsx03epbr" path="res://assets/images/menu/grey_diamond.png" id="2_27vy5"]
-[ext_resource type="Texture2D" uid="uid://br15s4vev84u6" path="res://assets/images/menu/green_diamond.png" id="3_4gkck"]
-[ext_resource type="AudioStream" uid="uid://cpwxnhbn5prj4" path="res://assets/sounds/button_selection.wav" id="5_1wm4i"]
+[ext_resource type="Texture2D" uid="uid://cj6isc1dsxb24" path="res://assets/images/menu/level_selection.png" id="1_5rv0k"]
+[ext_resource type="Script" uid="uid://ck6oaat0pgp5w" path="res://scripts/level_select.gd" id="1_py71h"]
+[ext_resource type="Texture2D" uid="uid://b7b2pqosf1nei" path="res://assets/images/menu/grey_diamond.png" id="2_27vy5"]
+[ext_resource type="Texture2D" uid="uid://b5tb7mg5cpwra" path="res://assets/images/menu/green_diamond.png" id="3_4gkck"]
+[ext_resource type="AudioStream" uid="uid://c7bccxo7v0ole" path="res://assets/sounds/level_selection.wav" id="5_1wm4i"]
+[ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="6_pw7pf"]
+[ext_resource type="AudioStream" uid="uid://dvkep1ug73grn" path="res://assets/sounds/menu.mp3" id="7_3e03m"]
 
 [node name="LevelSelect" type="Control" unique_id=375780528]
 layout_mode = 3
@@ -110,3 +112,7 @@ offset_bottom = 40.0
 
 [node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1349665565]
 stream = ExtResource("5_1wm4i")
+
+[node name="Music" parent="." unique_id=523430806 instance=ExtResource("6_pw7pf")]
+stream = ExtResource("7_3e03m")
+parameters/looping = true

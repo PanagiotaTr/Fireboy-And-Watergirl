@@ -4,14 +4,16 @@ extends Node
 @export var water_door: NodePath
 @export var win_panel: NodePath
 @export var level_id: int = 1
-@onready var button_sound = get_node(win_panel).get_node("ButtonSound")
 @onready  var minutes_text: Label = $"../Timer/Panel/MinutesText"
 @onready var seconds_text: Label = $"../Timer/Panel/SecondsText"
 @export var lose_panel: NodePath
 @export var levels_to_unlock: Array[int] = []
 @export var required_completed_levels: Array[int] = []
 @export var branch_unlock_levels: Array[int] = []
+@onready var lose_music: AudioStreamPlayer = get_node(lose_panel).get_node("Music")
+@onready var win_music: AudioStreamPlayer = get_node(win_panel).get_node("Music")
 
+@onready var button_sound: AudioStreamPlayer = $ButtonSound
 var won := false
 
 func _ready() -> void:
@@ -22,10 +24,17 @@ func _ready() -> void:
 	get_node(lose_panel).get_node("BackButton").pressed.connect(_on_back_pressed)
 	get_node(lose_panel).get_node("RetryButton").pressed.connect(_on_retry_pressed)
 
-	var back_button = get_node(win_panel).get_node("BackButton")
-	back_button.mouse_entered.connect(_play_hover_sound)
+	var win_back_button = get_node(win_panel).get_node("BackButton")
+	win_back_button.mouse_entered.connect(_play_hover_sound)
+
+	var lose_back_button = get_node(lose_panel).get_node("BackButton")
+	lose_back_button.mouse_entered.connect(_play_hover_sound)
+
+	var retry_button = get_node(lose_panel).get_node("RetryButton")
+	retry_button.mouse_entered.connect(_play_hover_sound)
 
 	GameManager.reset_coins()
+	lose_music.stop()
 
 func _process(_delta: float) -> void:
 	if won:
@@ -63,8 +72,13 @@ func _process(_delta: float) -> void:
 
 func _on_back_pressed() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://levels/LevelSelect.tscn")
 
+	win_music.stop()
+	lose_music.stop()
+
+	get_tree().change_scene_to_file("res://levels/LevelSelect.tscn")
+	
+	
 func _play_hover_sound() -> void:
 	button_sound.play()
 
@@ -77,9 +91,12 @@ func show_lose_panel() -> void:
 
 	var panel = get_node(lose_panel)
 	panel.visible = true
+	win_music.stop()
+	lose_music.play()
 	panel.get_node("AnimationPlayer").play("show")
 	
 func _on_retry_pressed() -> void:
 	get_tree().paused = false
+	lose_music.stop()
 	get_tree().reload_current_scene()
 	

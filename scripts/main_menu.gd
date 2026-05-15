@@ -11,6 +11,8 @@ func _ready() -> void:
 
 	$Watergirl.set_physics_process(false)
 	$Watergirl.set_process(false)
+	
+	MusicManager.play_music("shared_music")
 
 	for child in get_children():
 		if child is Button or child is TextureButton:
