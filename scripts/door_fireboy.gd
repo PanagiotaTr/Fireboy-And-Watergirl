@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var allowed_group: String = "fireboy"
-@export var open_delay: float = 1.5
+@export var open_delay: float = 0.5
 
 @onready var trigger: Area2D = $Trigger
 @onready var anim: AnimationPlayer = $AnimationPlayer
