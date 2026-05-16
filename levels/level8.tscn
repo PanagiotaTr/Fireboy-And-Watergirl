@@ -3051,10 +3051,10 @@ position = Vector2(-153.33333, -82.5)
 scale = Vector2(1, 1)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("7_fvqlr")]
-position = Vector2(-144, -232)
+position = Vector2(347, 333)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("8_o1ngg")]
-position = Vector2(-288, -232)
+position = Vector2(300, -233)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=2023583884]
 collision_layer = 2
@@ -3140,7 +3140,7 @@ move_offset = Vector2(118, 0)
 move_duration = 2.0
 
 [node name="RedButton2" parent="Platforms" unique_id=2015086104 instance=ExtResource("9_oy217")]
-position = Vector2(295, 58)
+position = Vector2(295, 58.000004)
 press_depth = 16.0
 press_duration = 0.5
 
@@ -3171,9 +3171,10 @@ position = Vector2(-478, 250)
 scale = Vector2(0.5, 0.5)
 
 [node name="WhiteLeverTop" parent="Levers" unique_id=803711641 instance=ExtResource("34_1qgqi")]
-position = Vector2(436, -576)
+position = Vector2(436, -578)
 
 [node name="WhiteLever" parent="Levers" unique_id=32482153 instance=ExtResource("34_1qgqi")]
+position = Vector2(0, -2)
 
 [node name="GreenLever" parent="Levers" unique_id=1935705438 instance=ExtResource("35_ythes")]
 position = Vector2(2, 192)

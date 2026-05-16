@@ -2663,10 +2663,10 @@ position = Vector2(176, 315)
 position = Vector2(-17, 316)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("3_yn1es")]
-position = Vector2(521, -139)
+position = Vector2(-328, 54)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("4_3612o")]
-position = Vector2(-383, 334)
+position = Vector2(369, -51)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(1, 80)
@@ -2696,8 +2696,9 @@ scale = Vector2(0.7, 0.7)
 move_offset = Vector2(0, 64)
 
 [node name="ButtonPlate" parent="." unique_id=1618439526 instance=ExtResource("11_3bikl")]
-position = Vector2(-258, 60)
-press_depth = 15.0
+position = Vector2(-258, 58)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="MovingPlatform2" parent="." unique_id=1646944329 instance=ExtResource("10_1o3wi")]
 position = Vector2(497.99994, -9)
@@ -2705,8 +2706,8 @@ scale = Vector2(0.7, 0.7)
 move_offset = Vector2(0, 64)
 
 [node name="ButtonPlate2" parent="." unique_id=1771812416 instance=ExtResource("11_3bikl")]
-position = Vector2(299, -36)
-press_depth = 16.0
+position = Vector2(299, -37)
+press_depth = 17.0
 press_duration = 0.5
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("13_c124c")]
@@ -2733,7 +2734,9 @@ process_mode = 3
 stream = ExtResource("37_r8rrl")
 
 [node name="ButtonPlate3" parent="." unique_id=1733890532 instance=ExtResource("11_3bikl")]
-position = Vector2(-354, -36)
+position = Vector2(-354, -37)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="MovingPlatform3" parent="." unique_id=993838242 instance=ExtResource("10_1o3wi")]
 position = Vector2(295, -176)

@@ -3019,10 +3019,10 @@ position = Vector2(52.5, 224.16666)
 scale = Vector2(1, 1)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("30_hbqma")]
-position = Vector2(56, -192)
+position = Vector2(379, 343)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("31_tsyx2")]
-position = Vector2(-216, -208)
+position = Vector2(522, 343)
 
 [node name="Button-Plate" type="Node2D" parent="." unique_id=700496854]
 
@@ -3045,7 +3045,7 @@ move_offset = Vector2(0, -60)
 
 [node name="ButtonPlate" parent="Button-Plate-Up" unique_id=34841336 instance=ExtResource("8_8380d")]
 position = Vector2(146, -100)
-press_depth = 15.0
+press_depth = 16.0
 press_duration = 0.5
 
 [node name="Button-Plate-Up2" type="Node2D" parent="." unique_id=2033632853]

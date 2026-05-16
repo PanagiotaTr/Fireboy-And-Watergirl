@@ -3124,9 +3124,13 @@ position = Vector2(-176, -160)
 
 [node name="ButtonPlate" parent="." unique_id=1618439526 instance=ExtResource("28_8yh6p")]
 position = Vector2(-512, 349)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="ButtonPlate2" parent="." unique_id=1793550250 instance=ExtResource("29_s41e3")]
 position = Vector2(512, 345)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="MovingPlatform" parent="." unique_id=350428035 instance=ExtResource("30_81wm2")]
 position = Vector2(184.00002, 317.00003)
@@ -3159,12 +3163,18 @@ move_offset = Vector2(0, 70)
 
 [node name="ButtonPlate3" parent="." unique_id=506698681 instance=ExtResource("36_iv5ii")]
 position = Vector2(-206, -132)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="ButtonPlate4" parent="." unique_id=62242576 instance=ExtResource("37_bq5as")]
 position = Vector2(206.00002, -134)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="ButtonPlate5" parent="." unique_id=1019343897 instance=ExtResource("38_h8ypj")]
 position = Vector2(0, -5)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="PushBox2" parent="." unique_id=379796664 instance=ExtResource("32_pai2w")]
 position = Vector2(0, -118)
@@ -3176,9 +3186,13 @@ move_offset = Vector2(0, 62)
 
 [node name="ButtonPlate6" parent="." unique_id=765288970 instance=ExtResource("36_iv5ii")]
 position = Vector2(-270, 124.00001)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="ButtonPlate7" parent="." unique_id=1762661399 instance=ExtResource("36_iv5ii")]
 position = Vector2(270, 122.00001)
+press_depth = 17.0
+press_duration = 0.5
 
 [node name="DarknessLayer" type="CanvasLayer" parent="." unique_id=218627906]
 visible = false

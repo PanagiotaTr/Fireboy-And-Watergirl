@@ -38,7 +38,7 @@
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="34_bmipv"]
 [ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="34_crwx7"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="35_478y7"]
-[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="36_crwx7"]
+[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="36_crwx7"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="38_vv7bw"]
 [ext_resource type="AudioStream" uid="uid://b33dg1i6p16fh" path="res://assets/sounds/win_window_fast.wav" id="39_lo7lv"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="39_lxyii"]
@@ -3255,10 +3255,10 @@ position = Vector2(-480, 269)
 position = Vector2(305, 0)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("29_uidrn")]
-position = Vector2(-336, 120)
+position = Vector2(-125, -48)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("30_c3q3a")]
-position = Vector2(336, 120)
+position = Vector2(-115, 219)
 
 [node name="Enemy" parent="." unique_id=365564668 instance=ExtResource("32_sv5e8")]
 position = Vector2(3, -119)
@@ -3281,12 +3281,12 @@ shape = SubResource("RectangleShape2D_0hol4")
 [node name="Buttons" type="Node2D" parent="." unique_id=1614462925]
 
 [node name="ButtonPlate" parent="Buttons" unique_id=1618439526 instance=ExtResource("6_el2p7")]
-position = Vector2(-167, 220)
+position = Vector2(-167, 219)
 press_depth = 16.0
 press_duration = 0.5
 
 [node name="ButtonPlate2" parent="Buttons" unique_id=777898523 instance=ExtResource("6_el2p7")]
-position = Vector2(-167, -36)
+position = Vector2(-167, -37)
 press_depth = 16.0
 press_duration = 0.5
 
@@ -3380,8 +3380,8 @@ position = Vector2(40, 182)
 move_offset = Vector2(-85, 0)
 
 [node name="Lever" parent="." unique_id=803711641 instance=ExtResource("27_u3me6")]
-position = Vector2(167, 90)
-scale = Vector2(0.5, 0.5)
+position = Vector2(167, 88)
+scale = Vector2(0.6, 0.6)
 
 [node name="Music" parent="." unique_id=1372747149 instance=ExtResource("34_crwx7")]
 
