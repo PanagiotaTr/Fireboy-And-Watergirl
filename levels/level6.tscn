@@ -36,7 +36,7 @@
 [ext_resource type="Shader" uid="uid://biumjcx5rbi7m" path="res://scripts/level6.gdshader" id="34_lkdl6"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="36_w8dvk"]
 [ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="37_1kccm"]
-[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="38_rtl21"]
+[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="38_rtl21"]
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="39_itydq"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="40_iuc0j"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="41_1kccm"]
@@ -1740,10 +1740,11 @@ sources/17 = SubResource("TileSetAtlasSource_4n4dr")
 sources/18 = SubResource("TileSetAtlasSource_2vjxy")
 sources/19 = SubResource("TileSetAtlasSource_edo0i")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_iabar"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rtl21"]
 shader = ExtResource("34_lkdl6")
 shader_parameter/light_pos_1 = Vector2(300, 200)
 shader_parameter/light_pos_2 = Vector2(500, 200)
+shader_parameter/light_pos_3 = Vector2(700, 200)
 shader_parameter/radius = 120.0
 shader_parameter/softness = 80.0
 
@@ -1872,23 +1873,24 @@ position = Vector2(431, -49.999985)
 scale = Vector2(0.8, 0.9)
 move_offset = Vector2(100, 0)
 
-[node name="DarknessLayer" type="CanvasLayer" parent="." unique_id=1668812405]
-
-[node name="ColorRect" type="ColorRect" parent="DarknessLayer" unique_id=166169952]
-material = SubResource("ShaderMaterial_iabar")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
-
 [node name="Music" parent="." unique_id=523430806 instance=ExtResource("36_w8dvk")]
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("37_1kccm")]
 z_index = 4
 position = Vector2(0, -219)
 scale = Vector2(0.5, 0.5)
+
+[node name="DarknessLayer" type="CanvasLayer" parent="." unique_id=607680849]
+
+[node name="ColorRect" type="ColorRect" parent="DarknessLayer" unique_id=508795662]
+material = SubResource("ShaderMaterial_rtl21")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="WinManager" type="Node2D" parent="." unique_id=1157858362]
 script = ExtResource("38_rtl21")

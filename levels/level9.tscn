@@ -47,7 +47,7 @@
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="44_e142t"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="45_6pr16"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="46_eyqvu"]
-[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="47_hj5ij"]
+[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="47_hj5ij"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="48_6pr16"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="49_eyqvu"]
 
@@ -3007,6 +3007,7 @@ sources/19 = SubResource("TileSetAtlasSource_7q145")
 shader = ExtResource("39_djgxs")
 shader_parameter/light_pos_1 = Vector2(300, 200)
 shader_parameter/light_pos_2 = Vector2(500, 200)
+shader_parameter/light_pos_3 = Vector2(0, 0)
 shader_parameter/radius = 120.0
 shader_parameter/softness = 80.0
 
@@ -3195,7 +3196,6 @@ press_depth = 17.0
 press_duration = 0.5
 
 [node name="DarknessLayer" type="CanvasLayer" parent="." unique_id=218627906]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="DarknessLayer" unique_id=2070836781]
 material = SubResource("ShaderMaterial_fnkvl")

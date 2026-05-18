@@ -13,6 +13,9 @@ func _process(delta):
 
 	var mat = dark_rect.material
 	var screen_center = get_viewport_rect().size / 2
+	
+	var extra_light_pos = Vector2(575, 15)
+	mat.set_shader_parameter("light_pos_3", extra_light_pos)
 
 	if is_instance_valid(fireboy) and !fireboy.is_dead:
 		var fireboy_screen_pos = fireboy.global_position - camera.global_position + screen_center
