@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://ciqt6ex1rpkmj" path="res://assets/sprites/terrain/Terrain (32x32).png" id="21_jbnkd"]
 [ext_resource type="Texture2D" uid="uid://ddbohkevb376p" path="res://assets/sprites/liquids/lava1.png" id="22_p3fwx"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="25_vhmrq"]
+[ext_resource type="Texture2D" uid="uid://das170cjvorpm" path="res://assets/images/menu/window_instructions.png" id="26_0v6ac"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_15vbr"]
 texture = ExtResource("3_w2ljq")
@@ -728,7 +729,7 @@ theme_override_colors/font_pressed_color = Color(0.78431374, 0.60784316, 0.12156
 theme_override_colors/font_hover_color = Color(1, 0.8862745, 0.47843137, 1)
 theme_override_constants/outline_size = 15
 theme_override_font_sizes/font_size = 48
-text = "INSTRUCTIONS"
+text = "MISSION"
 flat = true
 
 [node name="ExitButton" type="Button" parent="." unique_id=1806259202]
@@ -755,3 +756,85 @@ scale = Vector2(0.3, 0.3)
 
 [node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1587363617]
 stream = ExtResource("25_vhmrq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=367132073]
+
+[node name="InfoPanel" type="Panel" parent="CanvasLayer" unique_id=701356825]
+process_mode = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -724.0
+offset_right = 20.0
+offset_bottom = -684.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BackgroundImage" type="TextureRect" parent="CanvasLayer/InfoPanel" unique_id=828428075]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.725
+anchor_top = 14.975
+anchor_right = 5.175
+anchor_bottom = 20.625
+offset_left = -178.0
+offset_top = -118.0
+offset_right = 224.0
+offset_bottom = 215.0
+mouse_filter = 2
+texture = ExtResource("26_0v6ac")
+metadata/_edit_use_anchors_ = true
+
+[node name="TitleLabel2" type="Label" parent="CanvasLayer/InfoPanel" unique_id=2093635390]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -5.9
+anchor_top = 14.375
+anchor_right = 7.55
+anchor_bottom = 22.35
+offset_left = -36.0
+offset_top = -10.0
+offset_right = 16.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 18
+text = "For many years, mysterious earthquakes struck the Fire and 
+Water Kingdoms. The tremors always seemed to come from the 
+forbidden forest, where the ancient temples stood, and everyone 
+believed the temples were cursed because no adventurer ever 
+returned from them.
+
+Now, together with Fireboy and Watergirl, you must begin a 
+dangerous journey to uncover the truth. Along the way, you 
+will explore ancient temples filled with traps, mechanisms, 
+and locked gates. To reach the final level, you must first complete 
+all the previous levels and overcome every challenge standing in 
+your way. At the end of your journey, you will finally face the truth..."
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/InfoPanel" unique_id=1119489207]
+process_mode = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.05
+anchor_top = 20.075
+anchor_right = -0.05
+anchor_bottom = 20.075
+offset_left = -80.0
+offset_top = 121.0
+offset_right = 126.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_colors/font_pressed_color = Color(0.78431374, 0.60784316, 0.12156863, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8862745, 0.47843137, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 18
+text = "CLOSE"
+flat = true
+metadata/_edit_use_anchors_ = true

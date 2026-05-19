@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://c7bccxo7v0ole" path="res://assets/sounds/level_selection.wav" id="5_1wm4i"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="6_pw7pf"]
 [ext_resource type="AudioStream" uid="uid://dvkep1ug73grn" path="res://assets/sounds/menu.mp3" id="7_3e03m"]
+[ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="8_3e03m"]
 
 [node name="LevelSelect" type="Control" unique_id=375780528]
 layout_mode = 3
@@ -110,9 +111,27 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="ReturnMenuButton" type="Button" parent="." unique_id=1679345826]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 558.0
+offset_right = 292.0
+offset_bottom = 633.0
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8862745, 0.47843137, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.78431374, 0.60784316, 0.12156863, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 30
+text = "RETURN  MENU"
+flat = true
+
 [node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1349665565]
 stream = ExtResource("5_1wm4i")
 
 [node name="Music" parent="." unique_id=523430806 instance=ExtResource("6_pw7pf")]
 stream = ExtResource("7_3e03m")
 parameters/looping = true
+
+[node name="ButtonSoundReturnMenu" type="AudioStreamPlayer" parent="." unique_id=259365979]
+stream = ExtResource("8_3e03m")

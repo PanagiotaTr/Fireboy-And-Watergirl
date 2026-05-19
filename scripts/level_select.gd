@@ -4,8 +4,21 @@ extends Control
 @export var green_diamond: Texture2D
 
 @onready var button_sound = $ButtonSound
+@onready var return_menu : Button = $ReturnMenuButton
+@onready var button_sound_return_menu: AudioStreamPlayer = $ButtonSoundReturnMenu
+@onready var music: AudioStreamPlayer = $Music
 
 func _ready() -> void:
+	
+	if MusicManager.music.playing:
+		music.stop()
+	else:
+		music.play()
+
+	return_menu.pressed.connect(_on_return_menu_pressed)
+	return_menu.mouse_entered.connect(_on_return_menu_hover)
+	return_menu.mouse_exited.connect(_on_return_menu_exit)
+	
 	for i in range(1, 11):
 		var button: TextureButton = get_node("Level%dButton" % i)
 
@@ -58,3 +71,19 @@ func _exit(button: TextureButton) -> void:
 		return
 
 	button.modulate = Color(1, 1, 1)
+	
+func _on_return_menu_pressed() -> void:
+	get_tree().change_scene_to_file("res://levels/MainMenu.tscn")
+
+func _on_return_menu_hover() -> void:
+	if return_menu.disabled:
+		return
+
+	button_sound_return_menu.play()
+	return_menu.modulate = Color(1.3, 1.3, 1.3)
+	
+func _on_return_menu_exit() -> void:
+	if return_menu.disabled:
+		return
+
+	return_menu.modulate = Color(1, 1, 1)
