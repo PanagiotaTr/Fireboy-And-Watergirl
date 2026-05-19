@@ -93,6 +93,9 @@ func _process(_delta: float) -> void:
 		show_texts()
 
 func show_texts() -> void:
+	
+	await get_tree().create_timer(0.3).timeout
+	
 	label1.show()
 
 	await get_tree().create_timer(1.5).timeout

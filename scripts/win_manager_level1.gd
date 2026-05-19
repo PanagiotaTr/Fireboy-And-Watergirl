@@ -14,6 +14,8 @@ extends Node
 @onready var win_music: AudioStreamPlayer = get_node(win_panel).get_node("Music")
 
 @onready var button_sound: AudioStreamPlayer = $ButtonSound
+@onready var level_music: AudioStreamPlayer2D = $"../Music"
+
 var won := false
 
 func _ready() -> void:
@@ -57,7 +59,7 @@ func _process(_delta: float) -> void:
 			GameManager.unlock_levels(branch_unlock_levels)
 
 		#await get_tree().create_timer(1.0).timeout
-
+		level_music.stop()
 		get_tree().paused = true
 		
 		var panel = get_node(win_panel)

@@ -761,6 +761,7 @@ stream = ExtResource("25_vhmrq")
 
 [node name="InfoPanel" type="Panel" parent="CanvasLayer" unique_id=701356825]
 process_mode = 2
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

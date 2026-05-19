@@ -50,6 +50,8 @@
 [ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="47_hj5ij"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="48_6pr16"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="49_eyqvu"]
+[ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="51_kbue3"]
+[ext_resource type="AudioStream" uid="uid://cp3yhmdvvbwkt" path="res://assets/music/LevelMusic.mp3" id="52_ofafu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6pr16"]
 texture = ExtResource("2_e142t")
@@ -3116,12 +3118,10 @@ position = Vector2(80, -32)
 position = Vector2(-81, -32)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("25_wbscf")]
-position = Vector2(184, -152)
+position = Vector2(435, 343)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("26_oim1m")]
-position = Vector2(-176, -160)
-
-[node name="Music" parent="." unique_id=523430806 instance=ExtResource("27_2k3gg")]
+position = Vector2(-431, 348)
 
 [node name="ButtonPlate" parent="." unique_id=1618439526 instance=ExtResource("28_8yh6p")]
 position = Vector2(-512, 349)
@@ -3421,6 +3421,9 @@ branch_unlock_levels = Array[int]([10])
 [node name="ButtonSound" type="AudioStreamPlayer" parent="WinManager" unique_id=1702855970]
 process_mode = 3
 stream = ExtResource("45_6pr16")
+
+[node name="Music" parent="." unique_id=1372747149 instance=ExtResource("51_kbue3")]
+stream = ExtResource("52_ofafu")
 
 [connection signal="toggled" from="ButtonPlate" to="MovingPlatform" method="set_active"]
 [connection signal="toggled" from="ButtonPlate2" to="MovingPlatform2" method="set_active"]

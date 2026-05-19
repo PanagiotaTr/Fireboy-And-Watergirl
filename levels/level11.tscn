@@ -42,6 +42,8 @@
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="37_4y2jh"]
 [ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="39_bftdm"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="40_4y2jh"]
+[ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="43_f5wh6"]
+[ext_resource type="AudioStream" uid="uid://cp3yhmdvvbwkt" path="res://assets/music/LevelMusic.mp3" id="44_g0mem"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cjcs"]
 texture = ExtResource("1_jcoaa")
@@ -2174,7 +2176,7 @@ offset_bottom = 389.0
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "[center][color=#f2c94c]End[/color]"
+text = "[center][color=#f2c94c]End ![/color]"
 
 [node name="PrisonCell1" type="RichTextLabel" parent="." unique_id=962843981]
 z_index = 1
@@ -2489,8 +2491,6 @@ branch_unlock_levels = Array[int]([10])
 process_mode = 3
 stream = ExtResource("40_4y2jh")
 
-[node name="Music" parent="." unique_id=1638674822 instance=ExtResource("33_0o4a6")]
-
 [node name="Fireboy1" parent="." unique_id=1578248279 instance=ExtResource("23_3efpm")]
 position = Vector2(465, 170)
 
@@ -2625,5 +2625,20 @@ theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 15
 bbcode_enabled = true
 text = "[center][color=#f2c94c]Prison - Cell 10[/color]"
+
+[node name="Message" type="RichTextLabel" parent="." unique_id=1044736708]
+z_index = 1
+offset_left = -131.0
+offset_top = -57.0
+offset_right = 246.0
+offset_bottom = 19.0
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[center][color=#f2c94c]Open the cells                           
+to release them..[/color]"
+
+[node name="Music" parent="." unique_id=1372747149 instance=ExtResource("43_f5wh6")]
+stream = ExtResource("44_g0mem")
 
 [connection signal="toggled" from="Platforms/RedButton" to="Platforms/RedPlat1" method="set_active"]

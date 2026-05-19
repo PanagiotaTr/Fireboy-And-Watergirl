@@ -41,6 +41,8 @@
 [ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="39_2wbvb"]
 [ext_resource type="AudioStream" uid="uid://t1cxlqncw584" path="res://assets/sounds/win_window_slow.wav" id="39_pku5n"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="39_tay84"]
+[ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="42_odtt3"]
+[ext_resource type="AudioStream" uid="uid://cp3yhmdvvbwkt" path="res://assets/music/LevelMusic.mp3" id="43_2wbvb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xpsa"]
 texture = ExtResource("1_p1mwe")
@@ -2055,7 +2057,8 @@ branch_unlock_levels = Array[int]([10])
 process_mode = 3
 stream = ExtResource("35_pku5n")
 
-[node name="Music" parent="." unique_id=1819068454 instance=ExtResource("39_tay84")]
+[node name="Music" parent="." unique_id=1372747149 instance=ExtResource("42_odtt3")]
+stream = ExtResource("43_2wbvb")
 
 [connection signal="toggled" from="Platforms&Button/GreenButton" to="Platforms&Button/GreenPlat" method="set_active"]
 [connection signal="toggled" from="Platforms&Button/WhiteButton1" to="Platforms&Button/WhitePlat" method="set_active"]

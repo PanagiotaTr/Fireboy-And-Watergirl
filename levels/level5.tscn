@@ -42,6 +42,8 @@
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="39_kqk47"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="39_ntr31"]
 [ext_resource type="PackedScene" uid="uid://c6y471g37hli2" path="res://scenes/timer.tscn" id="39_w2b46"]
+[ext_resource type="PackedScene" uid="uid://behcrf50s3yd1" path="res://scenes/music/music-sped.tscn" id="43_libgd"]
+[ext_resource type="AudioStream" uid="uid://cp3yhmdvvbwkt" path="res://assets/music/LevelMusic.mp3" id="44_5wrxk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dclkh"]
 texture = ExtResource("1_qx21w")
@@ -3291,7 +3293,8 @@ z_index = 4
 position = Vector2(0, -252)
 scale = Vector2(0.5, 0.5)
 
-[node name="Music" parent="." unique_id=909347368 instance=ExtResource("39_kqk47")]
+[node name="Music" parent="." unique_id=1372747149 instance=ExtResource("43_libgd")]
+stream = ExtResource("44_5wrxk")
 
 [connection signal="toggled" from="Button-Plate/ButtonPlate" to="Button-Plate/MovingPlatform" method="set_active"]
 [connection signal="toggled" from="Button-Plate-Up/ButtonPlate" to="Button-Plate-Up/MovingPlatform" method="set_active"]

@@ -108,9 +108,9 @@ texture_normal = ExtResource("2_27vy5")
 
 [node name="Level11Button" type="TextureButton" parent="." unique_id=1131968786]
 layout_mode = 0
-offset_left = 455.00003
+offset_left = 454.0
 offset_top = 242.00002
-offset_right = 632.0
+offset_right = 631.0
 offset_bottom = 350.0
 scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("2_27vy5")
