@@ -19,7 +19,7 @@ func _ready() -> void:
 	return_menu.mouse_entered.connect(_on_return_menu_hover)
 	return_menu.mouse_exited.connect(_on_return_menu_exit)
 	
-	for i in range(1, 11):
+	for i in range(1, 12):
 		var button: TextureButton = get_node("Level%dButton" % i)
 
 		if GameManager.completed_levels.has(i):
@@ -51,7 +51,7 @@ func _go_to_level(level_id: int) -> void:
 	if GameManager.completed_levels.has(level_id):
 		return
 
-	if level_id >= 1 and level_id <= 10:
+	if level_id >= 1 and level_id <= 11:
 		MusicManager.stop_music()
 	else:
 		MusicManager.play_music("shared_music")

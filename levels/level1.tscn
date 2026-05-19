@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://b7stjb0tcr4q0" path="res://assets/sprites/liquids/water.png" id="28_tk73g"]
 [ext_resource type="Texture2D" uid="uid://ciqt6ex1rpkmj" path="res://assets/sprites/terrain/Terrain (32x32).png" id="29_q7fj0"]
 [ext_resource type="Texture2D" uid="uid://ddbohkevb376p" path="res://assets/sprites/liquids/lava1.png" id="30_yx6rh"]
-[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="31_kklod"]
+[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="31_kklod"]
 [ext_resource type="PackedScene" uid="uid://b7iwxx0ypfjd5" path="res://scenes/push_box.tscn" id="34_3612o"]
 [ext_resource type="Texture2D" uid="uid://bwt1u0mhuvyiq" path="res://assets/images/menu/winner_window.png" id="36_poyfc"]
 [ext_resource type="PackedScene" uid="uid://by0hjnb16cw22" path="res://scenes/enemy.tscn" id="36_sqx3p"]
@@ -2663,10 +2663,10 @@ position = Vector2(176, 315)
 position = Vector2(-17, 316)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("3_yn1es")]
-position = Vector2(-328, 54)
+position = Vector2(340, -142)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("4_3612o")]
-position = Vector2(369, -51)
+position = Vector2(518, -138)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(1, 80)

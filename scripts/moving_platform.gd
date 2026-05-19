@@ -41,6 +41,10 @@ func set_active(state: bool) -> void:
 		reset_platform()
 
 func _start_tween(destination: Vector2) -> void:
+	# level 11 - platforms disappear
+	if not is_inside_tree():
+		return
+	
 	if tween and tween.is_valid():
 		tween.kill()
 
