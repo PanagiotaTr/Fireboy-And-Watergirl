@@ -1,10 +1,10 @@
 shader_type canvas_item;
 
-uniform vec2 light_pos_1 = vec2(300.0, 200.0);
-uniform vec2 light_pos_2 = vec2(500.0, 200.0);
-uniform vec2 light_pos_3 = vec2(415.0, 23.0);
+uniform vec2 light_pos_1 = vec2(50.0, 100.0);
+uniform vec2 light_pos_2 = vec2(1570.0, 780.0);
+uniform vec2 light_pos_3 = vec2(200.0, 200.0);
 
-uniform float radius = 70.0;
+uniform float radius = 180.0;
 uniform float softness = 40.0;
 
 void fragment() {

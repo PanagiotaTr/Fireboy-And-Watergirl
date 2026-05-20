@@ -843,3 +843,18 @@ theme_override_font_sizes/font_size = 18
 text = "CLOSE"
 flat = true
 metadata/_edit_use_anchors_ = true
+
+[node name="Background2" type="TextureRect" parent="." unique_id=2027236360]
+layout_mode = 0
+offset_left = 1153.0
+offset_right = 2305.0
+offset_bottom = 720.0
+texture = ExtResource("2_17qdo")
+
+[node name="Background3" type="TextureRect" parent="." unique_id=879714497]
+layout_mode = 0
+offset_left = -1153.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 721.0
+texture = ExtResource("2_17qdo")
