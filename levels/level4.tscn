@@ -1781,6 +1781,7 @@ tile_set = SubResource("TileSet_m1yk4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1015965509]
 position = Vector2(1, 80)
+zoom = Vector2(1.4, 1.45)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=591300435]
 collision_layer = 2

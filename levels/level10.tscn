@@ -1716,7 +1716,7 @@ tile_set = SubResource("TileSet_k73cj")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(8.34465e-07, 37)
 scale = Vector2(-20.342932, -12.3972435)
-zoom = Vector2(1, 0.95)
+zoom = Vector2(1.4, 1.35)
 
 [node name="Doors" type="Node2D" parent="." unique_id=343482569]
 position = Vector2(865, 576)

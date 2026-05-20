@@ -690,6 +690,10 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_oiv87")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=294345227]
+position = Vector2(576, 323)
+zoom = Vector2(1.4, 1.45)
+
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=388142731]
 visible = false
 z_index = 1

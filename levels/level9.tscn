@@ -3059,6 +3059,7 @@ tile_set = SubResource("TileSet_2xdm1")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1664205879]
 position = Vector2(1, 85)
+zoom = Vector2(1.4, 1.45)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=1850877283]
 collision_layer = 2
@@ -3196,6 +3197,7 @@ press_depth = 17.0
 press_duration = 0.5
 
 [node name="DarknessLayer" type="CanvasLayer" parent="." unique_id=218627906]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="DarknessLayer" unique_id=2070836781]
 material = SubResource("ShaderMaterial_fnkvl")

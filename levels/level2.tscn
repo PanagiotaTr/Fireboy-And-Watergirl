@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://cmnhpq1xbx8t6" path="res://scenes/hanging_log.tscn" id="35_gkpyy"]
 [ext_resource type="AudioStream" uid="uid://c0km8vnqkpwf1" path="res://assets/sounds/button_selection.wav" id="35_pi0ug"]
 [ext_resource type="PackedScene" uid="uid://d24it6kgfg41e" path="res://scenes/green_coin.tscn" id="36_8men3"]
-[ext_resource type="Script" uid="uid://dawg65eu21tg4" path="res://scripts/win_manager_level1.gd" id="36_e8ahx"]
+[ext_resource type="Script" uid="uid://b7g66p6q18fj2" path="res://scripts/win_manager_level1.gd" id="36_e8ahx"]
 [ext_resource type="PackedScene" uid="uid://5nh2k0ewbvkp" path="res://scenes/music/music-normal.tscn" id="38_44524"]
 [ext_resource type="AudioStream" uid="uid://mfe8wy2cnnmi" path="res://assets/sounds/lose_window.wav" id="39_hgqp7"]
 [ext_resource type="AudioStream" uid="uid://b33dg1i6p16fh" path="res://assets/sounds/win_window_fast.wav" id="39_pfs2t"]
@@ -3638,7 +3638,8 @@ tile_map_data = PackedByteArray("AADw/wcAAQACAA4AAADv//n/AQABAAAAAADv//r/AQABAAE
 tile_set = SubResource("TileSet_k73cj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
-position = Vector2(0, 55)
+position = Vector2(0, 57)
+zoom = Vector2(1.4, 1.45)
 
 [node name="Doors" type="Node2D" parent="." unique_id=1905756846]
 
@@ -3779,7 +3780,7 @@ position = Vector2(174.99998, -58)
 scale = Vector2(0.58, 0.58)
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("31_sxrw6")]
-position = Vector2(0, -252)
+position = Vector2(0, -248)
 scale = Vector2(0.5, 0.5)
 
 [node name="Music" parent="." unique_id=1372747149 instance=ExtResource("32_vko8m")]

@@ -17,6 +17,10 @@ script = ExtResource("1_py71h")
 grey_diamond = ExtResource("2_27vy5")
 green_diamond = ExtResource("3_4gkck")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=406015969]
+position = Vector2(576, 323)
+zoom = Vector2(1.4, 1.45)
+
 [node name="Background" type="TextureRect" parent="." unique_id=1971087930]
 layout_mode = 0
 offset_left = -55.0

@@ -2665,13 +2665,14 @@ position = Vector2(176, 315)
 position = Vector2(-17, 316)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("3_yn1es")]
-position = Vector2(-481, 343)
+position = Vector2(523, -142)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("4_3612o")]
-position = Vector2(-482, 246)
+position = Vector2(337, -144)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(1, 80)
+zoom = Vector2(1.4, 1.45)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=2023583884]
 collision_layer = 2
@@ -2714,7 +2715,7 @@ press_duration = 0.5
 
 [node name="Timer" parent="." unique_id=852601352 instance=ExtResource("13_c124c")]
 z_index = 4
-position = Vector2(0, -226)
+position = Vector2(0, -219)
 scale = Vector2(0.5, 0.5)
 
 [node name="Blocks" type="TileMapLayer" parent="." unique_id=656246726]
