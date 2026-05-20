@@ -19,6 +19,8 @@ extends Node
 var won := false
 
 func _ready() -> void:
+	get_node(win_panel).self_modulate.a = 0.0
+	get_node(lose_panel).self_modulate.a = 0.0
 	get_node(win_panel).visible = false
 	get_node(win_panel).get_node("BackButton").pressed.connect(_on_back_pressed)
 
@@ -71,6 +73,40 @@ func _process(_delta: float) -> void:
 		
 		panel.visible = true
 		panel.get_node("AnimationPlayer").play("show")
+		panel.get_node("BackgroundImage").position = Vector2(200, 0)
+
+		var offset_x = 380
+		var offset_y = 120
+
+		panel.get_node("TitleLabel").position.x += offset_x
+		panel.get_node("TitleLabel").position.y += offset_y
+
+		panel.get_node("TitleLabel2").position.x += offset_x
+		panel.get_node("TitleLabel2").position.y += offset_y
+		
+		panel.get_node("TimeLabel").position.x += offset_x
+		panel.get_node("TimeLabel").position.y += offset_y
+
+		panel.get_node("RedCoinsLabel").position.x += offset_x
+		panel.get_node("RedCoinsLabel").position.y += offset_y
+
+		panel.get_node("BlueCoinsLabel").position.x += offset_x
+		panel.get_node("BlueCoinsLabel").position.y += offset_y
+
+		panel.get_node("GreenCoinsLabel").position.x += offset_x
+		panel.get_node("GreenCoinsLabel").position.y += offset_y
+
+		panel.get_node("BackButton").position.x += offset_x
+		panel.get_node("BackButton").position.y += offset_y
+
+		panel.get_node("Red_Coin").position.x += offset_x
+		panel.get_node("Red_Coin").position.y += offset_y
+
+		panel.get_node("Blue_Coin").position.x += offset_x
+		panel.get_node("Blue_Coin").position.y += offset_y
+
+		panel.get_node("Green_Coin").position.x += offset_x
+		panel.get_node("Green_Coin").position.y += offset_y
 
 func _on_back_pressed() -> void:
 	get_tree().paused = false
@@ -96,6 +132,20 @@ func show_lose_panel() -> void:
 	win_music.stop()
 	lose_music.play()
 	panel.get_node("AnimationPlayer").play("show")
+	
+	panel.get_node("BackgroundImage").position = Vector2(200, 0)
+
+	var offset_x = 380
+	var offset_y = 120
+
+	panel.get_node("TitleLabel").position.x += offset_x
+	panel.get_node("TitleLabel").position.y += offset_y
+
+	panel.get_node("BackButton").position.x += offset_x
+	panel.get_node("BackButton").position.y += offset_y
+
+	panel.get_node("RetryButton").position.x += offset_x
+	panel.get_node("RetryButton").position.y += offset_y
 	
 func _on_retry_pressed() -> void:
 	get_tree().paused = false
