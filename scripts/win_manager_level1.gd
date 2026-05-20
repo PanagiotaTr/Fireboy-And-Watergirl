@@ -66,6 +66,8 @@ func _process(_delta: float) -> void:
 		
 		var panel = get_node(win_panel)
 		
+		panel.position = Vector2(-1000, 1000)
+		
 		panel.get_node("RedCoinsLabel").text = "X  " + str(GameManager.red_coins)
 		panel.get_node("BlueCoinsLabel").text = "X  " + str(GameManager.blue_coins)
 		panel.get_node("GreenCoinsLabel").text = "X  " + str(GameManager.green_coins)
@@ -128,6 +130,7 @@ func show_lose_panel() -> void:
 	get_tree().paused = true
 
 	var panel = get_node(lose_panel)
+	panel.position = Vector2(-1000, 1000)
 	panel.visible = true
 	win_music.stop()
 	lose_music.play()
@@ -146,6 +149,8 @@ func show_lose_panel() -> void:
 
 	panel.get_node("RetryButton").position.x += offset_x
 	panel.get_node("RetryButton").position.y += offset_y
+	
+	level_music.stop()
 	
 func _on_retry_pressed() -> void:
 	get_tree().paused = false
