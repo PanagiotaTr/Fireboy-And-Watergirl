@@ -1850,7 +1850,7 @@ position = Vector2(98, 192)
 position = Vector2(448, 223)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("25_rsknp")]
-position = Vector2(325, -73)
+position = Vector2(327, -71)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("26_ml047")]
 position = Vector2(125, -133)
