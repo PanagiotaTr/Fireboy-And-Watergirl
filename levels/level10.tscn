@@ -1742,7 +1742,7 @@ position = Vector2(-319, 1)
 position = Vector2(46, -37)
 
 [node name="Red_Coin5" parent="Coins" unique_id=466014507 instance=ExtResource("36_1bcw7")]
-position = Vector2(-369, 161)
+position = Vector2(-369, 193)
 
 [node name="Red_Coin6" parent="Coins" unique_id=22601011 instance=ExtResource("36_1bcw7")]
 position = Vector2(-329, 292)
@@ -1763,16 +1763,16 @@ position = Vector2(398, 216)
 position = Vector2(59, 134)
 
 [node name="Blue_Coin6" parent="Coins" unique_id=991200028 instance=ExtResource("38_odtt3")]
-position = Vector2(-207, 161)
+position = Vector2(-207, 193)
 
 [node name="Blue_Coin7" parent="Coins" unique_id=1154399520 instance=ExtResource("38_odtt3")]
 position = Vector2(-208, 292)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("7_odtt3")]
-position = Vector2(-110, 181)
+position = Vector2(383, -228)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("8_2wbvb")]
-position = Vector2(-113.000015, 189)
+position = Vector2(-229, -230)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=2023583884]
 collision_layer = 2

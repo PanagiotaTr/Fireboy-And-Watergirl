@@ -3121,10 +3121,10 @@ position = Vector2(80, -32)
 position = Vector2(-81, -32)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("25_wbscf")]
-position = Vector2(435, 343)
+position = Vector2(412, 339)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("26_oim1m")]
-position = Vector2(-431, 348)
+position = Vector2(-424, 343)
 
 [node name="ButtonPlate" parent="." unique_id=1618439526 instance=ExtResource("28_8yh6p")]
 position = Vector2(-512, 349)

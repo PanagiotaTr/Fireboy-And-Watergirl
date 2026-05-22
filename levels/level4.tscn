@@ -1870,10 +1870,10 @@ position = Vector2(-240, 40)
 position = Vector2(240, 40)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("6_bbo51")]
-position = Vector2(-480, 342)
+position = Vector2(-477, 347)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("7_xb7os")]
-position = Vector2(483.00003, 343)
+position = Vector2(486, 342)
 
 [node name="AirVent" parent="." unique_id=653155705 instance=ExtResource("30_yg108")]
 position = Vector2(-497.00003, -8.000001)

@@ -2665,10 +2665,10 @@ position = Vector2(176, 315)
 position = Vector2(-17, 316)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("3_yn1es")]
-position = Vector2(-475, 341)
+position = Vector2(-480, 343)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("4_3612o")]
-position = Vector2(-478, 243)
+position = Vector2(-481, 243)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=155703522]
 position = Vector2(1, 80)

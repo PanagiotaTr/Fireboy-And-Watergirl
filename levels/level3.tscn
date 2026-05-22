@@ -3256,10 +3256,10 @@ position = Vector2(-480, 269)
 position = Vector2(305, 0)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("29_uidrn")]
-position = Vector2(125, 345)
+position = Vector2(118, 344)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("30_c3q3a")]
-position = Vector2(-124, 345)
+position = Vector2(-131, 348)
 
 [node name="Enemy" parent="." unique_id=365564668 instance=ExtResource("32_sv5e8")]
 position = Vector2(3, -119)

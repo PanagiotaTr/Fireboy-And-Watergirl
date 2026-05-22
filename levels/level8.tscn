@@ -3051,10 +3051,10 @@ position = Vector2(-153.33333, -82.5)
 scale = Vector2(1, 1)
 
 [node name="Watergirl" parent="." unique_id=1759271356 instance=ExtResource("7_fvqlr")]
-position = Vector2(-289, -237)
+position = Vector2(239, 244)
 
 [node name="Fireboy" parent="." unique_id=769429523 instance=ExtResource("8_o1ngg")]
-position = Vector2(-215, 154)
+position = Vector2(300, 247.00002)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=2023583884]
 collision_layer = 2
