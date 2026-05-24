@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://ctbxntmrwy2uu"]
 
-[ext_resource type="Script" uid="uid://duu5wrwygl6ox" path="res://scripts/main_menu.gd" id="1_oiv87"]
+[ext_resource type="Script" uid="uid://dxt54qnovjmp" path="res://scripts/main_menu.gd" id="1_oiv87"]
 [ext_resource type="Texture2D" uid="uid://d05i26pb3qsyj" path="res://assets/images/menu/background_menu.png" id="2_17qdo"]
 [ext_resource type="PackedScene" uid="uid://bp21gobbmx54k" path="res://scenes/watergirl.tscn" id="3_k7r4y"]
 [ext_resource type="Texture2D" uid="uid://2l3ebrcg0eg4" path="res://assets/sprites/liquids/Green sprite vol2.png" id="3_w2ljq"]
@@ -797,29 +797,27 @@ metadata/_edit_use_anchors_ = true
 [node name="TitleLabel2" type="Label" parent="CanvasLayer/InfoPanel" unique_id=2093635390]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -5.9
-anchor_top = 14.375
-anchor_right = 7.55
-anchor_bottom = 22.35
+anchor_left = -10.675
+anchor_top = 14.425
+anchor_right = 15.125
+anchor_bottom = 22.4
 offset_left = -36.0
 offset_top = -10.0
 offset_right = 16.0
 offset_bottom = 16.0
+scale = Vector2(0.9083854, 1.419948)
 theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 18
-text = "For many years, mysterious earthquakes struck the Fire and 
-Water Kingdoms. The tremors always seemed to come from the 
-forbidden forest, where the ancient temples stood, and everyone 
-believed the temples were cursed because no adventurer ever 
-returned from them.
-
-Now, together with Fireboy and Watergirl, you must begin a 
-dangerous journey to uncover the truth. Along the way, you 
-will explore ancient temples filled with traps, mechanisms, 
-and locked gates. To reach the final level, you must first complete 
-all the previous levels and overcome every challenge standing in 
-your way. At the end of your journey, you will finally face the truth..."
+theme_override_font_sizes/font_size = 16
+text = "For many years, mysterious earthquakes struck the Fire and Water Kingdoms. 
+The tremors always seemed to come from the forbidden forest, where the ancient 
+temples stood, and everyone believed the temples were cursed because no adventurer 
+ever returned from them.
+Now, together with Fireboy and Watergirl, you must begin a dangerous journey to 
+uncover the truth. Along the way, you will explore ancient temples filled with traps, 
+mechanisms, and locked gates. To reach the final level, you must first complete all the 
+previous levels and overcome every challenge standing in your way. At the end of your 
+journey, you will finally face the truth..."
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
