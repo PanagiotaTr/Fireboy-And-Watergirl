@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dl4g4mjt3rvf8"]
 
-[ext_resource type="Texture2D" uid="uid://b2rifl6hb665s" path="res://assets/sprites/liquids/sign_death.png" id="1_0eoe3"]
-[ext_resource type="Script" uid="uid://cxtvpkl61nlut" path="res://scripts/death_effect.gd" id="1_516on"]
+[ext_resource type="Texture2D" uid="uid://bkyxve8bijpdl" path="res://assets/sprites/liquids/sign_death.png" id="1_0eoe3"]
+[ext_resource type="Script" uid="uid://buqgwksmqwuq2" path="res://scripts/death_effect.gd" id="1_516on"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_516on"]
 atlas = ExtResource("1_0eoe3")
