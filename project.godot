@@ -20,10 +20,6 @@ config/icon="res://icon.svg"
 GameManager="*uid://ysmtn6ry66mw"
 MusicManager="*uid://c5gcalgbuq7wm"
 
-[display]
-
-window/stretch/aspect="expand"
-
 [global_group]
 
 watergirl=""
